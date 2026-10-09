@@ -1,0 +1,245 @@
+[Event "Paris"]
+[Site "Paris FRA"]
+[Date "1750.??.??"]
+[Round "?"]
+[White "Legall de Kermeur"]
+[Black "Saint Brie"]
+[Result "1-0"]
+[ECO "C41"]
+[Opening "Philidor Defence"]
+[CMIntro "The oldest trick in the book: White gives up the queen and mates with the minor pieces. Learn Legal's mate!"]
+
+1. e4 e5 2. Nf3 d6 3. Bc4 Bg4 4. Nc3 g6 {This slow move is a mistake.} 5. Nxe5!
+{White leaves the queen to be taken!} 5... Bxd1 6. Bxf7+ Ke7 7. Nd5#
+{Checkmate with a bishop and two knights. This pattern is called "Legal's mate".}
+1-0
+
+[Event "London"]
+[Site "London ENG"]
+[Date "1851.06.21"]
+[Round "?"]
+[White "Adolf Anderssen"]
+[Black "Lionel Kieseritzky"]
+[Result "1-0"]
+[ECO "C33"]
+[Opening "King's Gambit Accepted"]
+[CMIntro "The Immortal Game - the most famous example of Romantic chess: White sacrifices a bishop, both rooks and the queen, and still checkmates."]
+
+1. e4 e5 2. f4 {The King's Gambit: White offers a pawn for quick development.}
+2... exf4 3. Bc4 Qh4+ 4. Kf1 b5 5. Bxb5 Nf6 6. Nf3 Qh6 7. d3 Nh5 8. Nh4 Qg5
+9. Nf5 c6 10. g4 Nf6 11. Rg1 cxb5 12. h4 Qg6 13. h5 Qg5 14. Qf3 Ng8 15. Bxf4 Qf6
+16. Nc3 Bc5 17. Nd5 Qxb2 18. Bd6 {White does not care about the rooks: Black's
+king is in danger!} 18... Bxg1 19. e5 Qxa1+ 20. Ke2 Na6 21. Nxg7+ Kd8 22. Qf6+
+{The final sacrifice: the queen!} 22... Nxf6 23. Be7#
+{Checkmate with just three minor pieces.} 1-0
+
+[Event "Berlin"]
+[Site "Berlin GER"]
+[Date "1852.??.??"]
+[Round "?"]
+[White "Adolf Anderssen"]
+[Black "Jean Dufresne"]
+[Result "1-0"]
+[ECO "C52"]
+[Opening "Evans Gambit"]
+[CMIntro "The Evergreen Game: a sparkling attack by the same Adolf Anderssen, ending with a beautiful queen sacrifice."]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 {The Evans Gambit: a pawn for fast development.}
+4... Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O d3 8. Qb3 Qf6 9. e5 Qg6 10. Re1 Nge7
+11. Ba3 b5 12. Qxb5 Rb8 13. Qa4 Bb6 14. Nbd2 Bb7 15. Ne4 Qf5 16. Bxd3 Qh5
+17. Nf6+ gxf6 18. exf6 Rg8 19. Rad1 Qxf3 20. Rxe7+ Nxe7 21. Qxd7+ {A queen
+sacrifice to open the way for the bishops.} 21... Kxd7 22. Bf5+ Ke8 23. Bd7+ Kf8
+24. Bxe7# 1-0
+
+[Event "Paris"]
+[Site "Paris FRA"]
+[Date "1858.??.??"]
+[Round "?"]
+[White "Paul Morphy"]
+[Black "Duke Karl / Count Isouard"]
+[Result "1-0"]
+[ECO "C41"]
+[Opening "Philidor Defence"]
+[CMIntro "The Opera Game, played during an opera in Paris. Morphy shows how powerful fast development is."]
+
+1. e4 e5 2. Nf3 d6 3. d4 Bg4 4. dxe5 Bxf3 5. Qxf3 dxe5 6. Bc4 {White threatens
+Qxf7 checkmate.} 6... Nf6 7. Qb3 Qe7 8. Nc3 c6 9. Bg5 b5 10. Nxb5 cxb5
+11. Bxb5+ Nbd7 12. O-O-O {Every white piece is in play, while Black's bishop
+and rook on the king's side have not moved.} 12... Rd8 13. Rxd7 Rxd7 14. Rd1 Qe6
+15. Bxd7+ Nxd7 16. Qb8+ Nxb8 17. Rd8# {A queen sacrifice and a rook mate.} 1-0
+
+[Event "Amsterdam"]
+[Site "Amsterdam NED"]
+[Date "1889.??.??"]
+[Round "?"]
+[White "Emanuel Lasker"]
+[Black "Johann Bauer"]
+[Result "1-0"]
+[ECO "A03"]
+[Opening "Bird's Opening"]
+[CMIntro "The future World Champion Emanuel Lasker sacrifices both bishops to tear open the black king's shelter - a famous attacking pattern."]
+
+1. f4 d5 2. e3 Nf6 3. b3 e6 4. Bb2 Be7 5. Bd3 b6 6. Nc3 Bb7 7. Nf3 Nbd7 8. O-O
+O-O 9. Ne2 c5 10. Ng3 Qc7 11. Ne5 Nxe5 12. Bxe5 Qc6 13. Qe2 a6 14. Nh5 Nxh5
+15. Bxh7+ {The first bishop sacrifice.} 15... Kxh7 16. Qxh5+ Kg8 17. Bxg7
+{And the second one!} 17... Kxg7 18. Qg4+ Kh7 19. Rf3 e5 20. Rh3+ Qh6 21. Rxh6+
+Kxh6 22. Qd7 {This double attack wins one of the bishops back.} 22... Bf6
+23. Qxb7 Kg7 24. Rf1 Rab8 25. Qd7 Rfd8 26. Qg4+ Kf8 27. fxe5 Bg7 28. e6 Rb7
+29. Qg6 f6 30. Rxf6+ Bxf6 31. Qxf6+ Ke8 32. Qh8+ Ke7 33. Qg7+ Kxe6 34. Qxb7 Rd6
+35. Qxa6 d4 36. exd4 cxd4 37. h4 d3 38. Qxd3 1-0
+
+[Event "Hastings"]
+[Site "Hastings ENG"]
+[Date "1895.08.17"]
+[Round "10"]
+[White "Wilhelm Steinitz"]
+[Black "Curt von Bardeleben"]
+[Result "1-0"]
+[ECO "C54"]
+[Opening "Italian Game: Giuoco Piano"]
+[CMIntro "The first World Champion, Wilhelm Steinitz, keeps the black king in the centre and finishes with a rook that refuses to be captured."]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 d5
+8. exd5 Nxd5 9. O-O Be6 10. Bg5 Be7 11. Bxd5 Bxd5 12. Nxd5 Qxd5 13. Bxe7 Nxe7
+14. Re1 f6 15. Qe2 Qd7 16. Rac1 c6 17. d5 {A pawn sacrifice to open lines
+against the uncastled king.} 17... cxd5 18. Nd4 Kf7 19. Ne6 Rhc8 20. Qg4 g6
+21. Ng5+ Ke8 22. Rxe7+ {The rook cannot be taken: every capture loses.} 22...
+Kf8 23. Rf7+ Kg8 24. Rg7+ Kh8 25. Rxh7+ {Black left the tournament hall instead
+of resigning. Steinitz then showed a forced mate in ten moves.} 1-0
+
+[Event "Lodz"]
+[Site "Lodz POL"]
+[Date "1907.??.??"]
+[Round "?"]
+[White "Georg Rotlewi"]
+[Black "Akiba Rubinstein"]
+[Result "0-1"]
+[ECO "D40"]
+[Opening "Queen's Gambit Declined: Semi-Tarrasch"]
+[CMIntro "Rubinstein's Immortal: Black sacrifices the queen and lets loose two bishops aimed at White's king."]
+
+1. d4 d5 2. Nf3 e6 3. e3 c5 4. c4 Nc6 5. Nc3 Nf6 6. dxc5 Bxc5 7. a3 a6 8. b4 Bd6
+9. Bb2 O-O 10. Qd2 Qe7 11. Bd3 dxc4 12. Bxc4 b5 13. Bd3 Rd8 14. Qe2 Bb7
+15. O-O Ne5 16. Nxe5 Bxe5 17. f4 Bc7 18. e4 Rac8 19. e5 Bb6+ 20. Kh1 Ng4
+21. Be4 Qh4 22. g3 Rxc3 {Black ignores the attacked queen.} 23. gxh4 Rd2
+24. Qxd2 Bxe4+ 25. Qg2 Rh3 {Mate on h2 cannot be stopped.} 0-1
+
+[Event "Vienna"]
+[Site "Vienna AUT"]
+[Date "1910.??.??"]
+[Round "?"]
+[White "Richard Reti"]
+[Black "Savielly Tartakower"]
+[Result "1-0"]
+[ECO "B15"]
+[Opening "Caro-Kann Defence"]
+[CMIntro "One of the shortest wins against a master: a queen sacrifice and a mate with two bishops."]
+
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Qd3 e5 6. dxe5 Qa5+ 7. Bd2 Qxe5
+8. O-O-O {White castles and offers a piece.} 8... Nxe4 9. Qd8+ {A queen
+sacrifice!} 9... Kxd8 10. Bg5+ Kc7 11. Bd8# 1-0
+
+[Event "London"]
+[Site "London ENG"]
+[Date "1912.10.29"]
+[Round "?"]
+[White "Edward Lasker"]
+[Black "George Alan Thomas"]
+[Result "1-0"]
+[ECO "A84"]
+[Opening "Dutch Defence"]
+[CMIntro "A famous king hunt: after a queen sacrifice the black king is chased all the way across the board to g1."]
+
+1. d4 e6 2. Nf3 f5 3. Nc3 Nf6 4. Bg5 Be7 5. Bxf6 Bxf6 6. e4 fxe4 7. Nxe4 b6
+8. Ne5 O-O 9. Bd3 Bb7 10. Qh5 Qe7 11. Qxh7+ {The queen sacrifice begins the
+hunt.} 11... Kxh7 12. Nxf6+ Kh6 13. Neg4+ Kg5 14. h4+ Kf4 15. g3+ Kf3 16. Be2+
+Kg2 17. Rh2+ Kg1 18. Kd2# {The black king has travelled from g8 to g1 - and is
+mated by a quiet king move.} 1-0
+
+[Event "Breslau"]
+[Site "Breslau GER"]
+[Date "1912.07.20"]
+[Round "?"]
+[White "Stefan Levitsky"]
+[Black "Frank Marshall"]
+[Result "0-1"]
+[ECO "D30"]
+[Opening "Queen's Gambit Declined"]
+[CMIntro "According to legend, spectators showered the board with gold coins after Marshall's final move."]
+
+1. d4 e6 2. e4 d5 3. Nc3 c5 4. Nf3 Nc6 5. exd5 exd5 6. Be2 Nf6 7. O-O Be7 8. Bg5
+O-O 9. dxc5 Be6 10. Nd4 Bxc5 11. Nxe6 fxe6 12. Bg4 Qd6 13. Bh3 Rae8 14. Qd2 Bb4
+15. Bxf6 Rxf6 16. Rad1 Qc5 17. Qe2 Bxc3 18. bxc3 Qxc3 19. Rxd5 Nd4 20. Qh5 Ref8
+21. Re5 Rh6 22. Qg5 Rxh3 23. Rc5 Qg3 {The queen can be taken in three ways - and
+every one of them loses.} 0-1
+
+[Event "New Orleans"]
+[Site "New Orleans USA"]
+[Date "1920.??.??"]
+[Round "?"]
+[White "Edwin Adams"]
+[Black "Carlos Torre"]
+[Result "1-0"]
+[ECO "C41"]
+[Opening "Philidor Defence"]
+[CMIntro "White's queen is offered again and again: Black's queen and rook are overloaded with defending the back rank."]
+
+1. e4 e5 2. Nf3 d6 3. d4 exd4 4. Qxd4 Nc6 5. Bb5 Bd7 6. Bxc6 Bxc6 7. Nc3 Nf6
+8. O-O Be7 9. Nd5 Bxd5 10. exd5 O-O 11. Bg5 c6 12. c4 cxd5 13. cxd5 Re8
+14. Rfe1 a5 15. Re2 Rc8 16. Rae1 Qd7 17. Bxf6 Bxf6 18. Qg4 {The queen cannot be
+taken: Qxg4 Rxe8+ and mate.} 18... Qb5 19. Qc4 Qd7 20. Qc7 Qb5 21. a4 Qxa4
+22. Re4 Qb5 23. Qxb7 {Black's queen can no longer guard e8.} 1-0
+
+[Event "Copenhagen"]
+[Site "Copenhagen DEN"]
+[Date "1923.??.??"]
+[Round "?"]
+[White "Friedrich Saemisch"]
+[Black "Aron Nimzowitsch"]
+[Result "0-1"]
+[ECO "E18"]
+[Opening "Queen's Indian Defence"]
+[CMIntro "The 'Immortal Zugzwang Game' by the hypermodern master Nimzowitsch: at the end White has plenty of pieces but no good move."]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 Be7 6. Nc3 O-O 7. O-O d5 8. Ne5 c6
+9. cxd5 cxd5 10. Bf4 a6 11. Rc1 b5 12. Qb3 Nc6 13. Nxc6 Bxc6 14. h3 Qd7 15. Kh2
+Nh5 16. Bd2 f5 17. Qd1 b4 18. Nb1 Bb5 19. Rg1 Bd6 20. e4 fxe4 21. Qxh5 Rxf2
+22. Qg5 Raf8 23. Kh1 R8f5 24. Qe3 Bd3 25. Rce1 h6 {Zugzwang: every White move
+makes things worse.} 0-1
+
+[Event "Rosenwald Memorial"]
+[Site "New York USA"]
+[Date "1956.10.17"]
+[Round "8"]
+[White "Donald Byrne"]
+[Black "Robert James Fischer"]
+[Result "0-1"]
+[ECO "D92"]
+[Opening "Gruenfeld Defence"]
+[CMIntro "The 'Game of the Century', played by 13-year-old Bobby Fischer. His queen sacrifice on move 17 is still admired today."]
+
+1. Nf3 Nf6 2. c4 g6 3. Nc3 Bg7 4. d4 O-O 5. Bf4 d5 6. Qb3 dxc4 7. Qxc4 c6 8. e4
+Nbd7 9. Rd1 Nb6 10. Qc5 Bg4 11. Bg5 Na4 {A surprising knight jump.} 12. Qa3 Nxc3
+13. bxc3 Nxe4 14. Bxe7 Qb6 15. Bc4 Nxc3 16. Bc5 Rfe8+ 17. Kf1 Be6 {The famous
+queen sacrifice: Black gives the queen for a whole army of pieces.} 18. Bxb6
+Bxc4+ 19. Kg1 Ne2+ 20. Kf1 Nxd4+ 21. Kg1 Ne2+ 22. Kf1 Nc3+ 23. Kg1 axb6 24. Qb4
+Ra4 25. Qxb6 Nxd1 26. h3 Rxa2 27. Kh2 Nxf2 28. Re1 Rxe1 29. Qd8+ Bf8 30. Nxe1
+Bd5 31. Nf3 Ne4 32. Qb8 b5 33. h4 h5 34. Ne5 Kg7 35. Kg1 Bc5+ 36. Kf1 Ng3+
+37. Ke1 Bb4+ 38. Kd1 Bb3+ 39. Kc1 Ne2+ 40. Kb1 Nc3+ 41. Kc1 Rc2#
+{The pieces worked together like a team to checkmate the king.} 0-1
+
+[Event "IBM Man-Machine, Game 6"]
+[Site "New York USA"]
+[Date "1997.05.11"]
+[Round "6"]
+[White "Deep Blue (computer)"]
+[Black "Garry Kasparov"]
+[Result "1-0"]
+[ECO "B17"]
+[Opening "Caro-Kann Defence"]
+[CMIntro "A historic day: the computer Deep Blue won this game and the match against World Champion Garry Kasparov."]
+
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7 5. Ng5 Ngf6 6. Bd3 e6 7. N1f3 h6
+{A known trap: the knight sacrifice on e6 is strong.} 8. Nxe6 Qe7 9. O-O fxe6
+10. Bg6+ Kd8 11. Bf4 b5 12. a4 Bb7 13. Re1 Nd5 14. Bg3 Kc8 15. axb5 cxb5 16. Qd3
+Bc6 17. Bf5 exf5 18. Rxe7 Bxe7 19. c4 1-0

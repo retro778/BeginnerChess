@@ -1,0 +1,4 @@
+# Only for running the tests (not needed on the server). pytest MIT; pytest-asyncio Apache-2.0.
+-r requirements.txt
+pytest==9.1.1
+pytest-asyncio==1.4.0

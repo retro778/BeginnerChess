@@ -1,0 +1,39 @@
+# Build results
+/beginnerchess
+*.exe
+*.o
+*.c
+*.asm
+tests/test_*
+!tests/test_*.bas
+dist/
+
+# Third-party libraries (shipped in the release packages, not in git; see README)
+*.dll
+*.so
+*.so.*
+
+# User data and local files (never published)
+/beginnerchess.ini
+/chessmaster.ini
+/profiles/
+/saves/*
+!/saves/.gitkeep
+data/beginnerchess.db
+data/chessmaster.db
+*.db
+*.db-wal
+*.db-shm
+/last-prompt.txt
+/prompt.txt
+/prompt-version2.0.0.txt
+/fonts/hebega.cpi
+/private/
+/CLAUDE.local.md
+/.claude/
+
+# Python
+server/.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/

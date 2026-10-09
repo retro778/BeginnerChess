@@ -1,0 +1,95 @@
+# Beginner Chess opening book
+# ------------------------
+# One opening line per row:   ECO | Opening name | moves in SAN
+# The computer may follow any line that matches the game so far; moves
+# that appear in several lines are chosen more often. The name of the
+# deepest line reached is shown during the game.
+# Lines starting with # are comments. Written for Beginner Chess (MIT licence);
+# opening moves and names themselves are common chess knowledge.
+
+# ---- 1.e4 e5 ---------------------------------------------------------
+C20 | King's Pawn Game | e4 e5
+C50 | Italian Game | e4 e5 Nf3 Nc6 Bc4
+C50 | Italian Game: Giuoco Pianissimo | e4 e5 Nf3 Nc6 Bc4 Bc5 d3 Nf6 c3 d6 O-O O-O
+C50 | Italian Game: Giuoco Pianissimo | e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d3 d6 O-O O-O Re1 a6
+C53 | Italian Game: Giuoco Piano | e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d4 exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5
+C51 | Italian Game: Evans Gambit | e4 e5 Nf3 Nc6 Bc4 Bc5 b4 Bxb4 c3 Ba5 d4
+C55 | Italian Game: Two Knights Defence | e4 e5 Nf3 Nc6 Bc4 Nf6 d3 Be7 O-O O-O Re1 d6
+C57 | Italian Game: Two Knights, Knight Attack | e4 e5 Nf3 Nc6 Bc4 Nf6 Ng5 d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 h6 Nf3 e4 Ne5
+C60 | Ruy Lopez (Spanish Game) | e4 e5 Nf3 Nc6 Bb5
+C65 | Ruy Lopez: Berlin Defence | e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Nd6 Bxc6 dxc6 dxe5 Nf5 Qxd8+ Kxd8
+C68 | Ruy Lopez: Exchange Variation | e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4
+C84 | Ruy Lopez: Closed | e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 O-O h3
+C84 | Ruy Lopez: Closed | e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 O-O h3 Nb8 d4 Nbd7
+C89 | Ruy Lopez: Marshall Attack | e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d5 exd5 Nxd5 Nxe5 Nxe5 Rxe5 c6
+C44 | Scotch Game | e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Nf6 Nxc6 bxc6 e5 Qe7 Qe2 Nd5
+C45 | Scotch Game: Classical | e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Bc5 Be3 Qf6 c3 Nge7
+C46 | Four Knights Game | e4 e5 Nf3 Nc6 Nc3 Nf6 Bb5 Bb4 O-O O-O d3 d6
+C47 | Four Knights Game: Scotch Variation | e4 e5 Nf3 Nc6 Nc3 Nf6 d4 exd4 Nxd4 Bb4 Nxc6 bxc6 Bd3 d5
+C42 | Petrov's Defence | e4 e5 Nf3 Nf6 Nxe5 d6 Nf3 Nxe4 d4 d5 Bd3
+C41 | Philidor Defence | e4 e5 Nf3 d6 d4 Nf6 Nc3 Nbd7
+C23 | Bishop's Opening | e4 e5 Bc4 Nf6 d3 c6 Nf3
+C25 | Vienna Game | e4 e5 Nc3 Nf6 f4 d5 fxe5 Nxe4 Nf3
+C21 | Danish Gambit | e4 e5 d4 exd4 c3 dxc3 Bc4
+C22 | Centre Game | e4 e5 d4 exd4 Qxd4 Nc6 Qe3
+C30 | King's Gambit | e4 e5 f4
+C33 | King's Gambit Accepted | e4 e5 f4 exf4 Nf3 g5 h4 g4 Ne5
+C30 | King's Gambit Declined | e4 e5 f4 Bc5 Nf3 d6 c3
+
+# ---- 1.e4 other ------------------------------------------------------
+B20 | Sicilian Defence | e4 c5
+B22 | Sicilian Defence: Alapin Variation | e4 c5 c3 Nf6 e5 Nd5 d4 cxd4 Nf3
+B23 | Sicilian Defence: Closed | e4 c5 Nc3 Nc6 g3 g6 Bg2 Bg7 d3 d6
+B21 | Sicilian Defence: Smith-Morra Gambit | e4 c5 d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 d6 Bc4
+B33 | Sicilian Defence: Sveshnikov Variation | e4 c5 Nf3 Nc6 d4 cxd4 Nxd4 Nf6 Nc3 e5 Ndb5 d6
+B46 | Sicilian Defence: Taimanov Variation | e4 c5 Nf3 e6 d4 cxd4 Nxd4 Nc6 Nc3 Qc7
+B90 | Sicilian Defence: Najdorf Variation | e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Be3 e5 Nb3
+B76 | Sicilian Defence: Dragon Variation | e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 g6 Be3 Bg7 f3 O-O Qd2 Nc6
+C00 | French Defence | e4 e6 d4 d5
+C02 | French Defence: Advance Variation | e4 e6 d4 d5 e5 c5 c3 Nc6 Nf3 Qb6
+C03 | French Defence: Tarrasch Variation | e4 e6 d4 d5 Nd2 Nf6 e5 Nfd7 Bd3 c5 c3 Nc6
+C13 | French Defence: Classical Variation | e4 e6 d4 d5 Nc3 Nf6 Bg5 Be7 e5 Nfd7 Bxe7 Qxe7
+C15 | French Defence: Winawer Variation | e4 e6 d4 d5 Nc3 Bb4 e5 c5 a3 Bxc3+ bxc3 Ne7
+C01 | French Defence: Exchange Variation | e4 e6 d4 d5 exd5 exd5 Nf3 Nf6 Bd3
+B10 | Caro-Kann Defence | e4 c6 d4 d5 Nc3 dxe4 Nxe4 Bf5 Ng3 Bg6
+B12 | Caro-Kann Defence: Advance Variation | e4 c6 d4 d5 e5 Bf5 Nf3 e6 Be2
+B13 | Caro-Kann Defence: Exchange Variation | e4 c6 d4 d5 exd5 cxd5 Bd3 Nc6 c3
+B01 | Scandinavian Defence | e4 d5 exd5 Qxd5 Nc3 Qa5 d4 Nf6 Nf3
+B01 | Scandinavian Defence: Modern Variation | e4 d5 exd5 Nf6 d4 Nxd5 Nf3
+B02 | Alekhine's Defence | e4 Nf6 e5 Nd5 d4 d6 Nf3
+B07 | Pirc Defence | e4 d6 d4 Nf6 Nc3 g6 Nf3 Bg7 Be2 O-O O-O
+B06 | Modern Defence | e4 g6 d4 Bg7 Nc3 d6
+
+# ---- 1.d4 d5 ---------------------------------------------------------
+D00 | Queen's Pawn Game | d4 d5
+D06 | Queen's Gambit | d4 d5 c4
+D20 | Queen's Gambit Accepted | d4 d5 c4 dxc4 Nf3 Nf6 e3 e6 Bxc4 c5 O-O a6
+D58 | Queen's Gambit Declined | d4 d5 c4 e6 Nc3 Nf6 Bg5 Be7 e3 O-O Nf3 h6 Bh4 b6
+D36 | Queen's Gambit Declined: Exchange Variation | d4 d5 c4 e6 Nc3 Nf6 cxd5 exd5 Bg5 c6 e3 Be7 Bd3
+D15 | Slav Defence | d4 d5 c4 c6 Nf3 Nf6 Nc3 dxc4 a4 Bf5 e3 e6 Bxc4
+D47 | Semi-Slav Defence | d4 d5 c4 c6 Nf3 Nf6 Nc3 e6 e3 Nbd7 Bd3 dxc4 Bxc4 b5
+D08 | Albin Countergambit | d4 d5 c4 e5 dxe5 d4 Nf3 Nc6
+D02 | London System | d4 d5 Nf3 Nf6 Bf4 e6 e3 c5 c3 Nc6
+
+# ---- 1.d4 Nf6 --------------------------------------------------------
+A45 | Trompowsky Attack | d4 Nf6 Bg5
+A46 | London System | d4 Nf6 Nf3 e6 Bf4
+A48 | London System | d4 Nf6 Nf3 g6 Bf4 Bg7 e3 O-O
+E00 | Catalan Opening | d4 Nf6 c4 e6 g3 d5 Bg2 Be7 Nf3 O-O O-O
+E46 | Nimzo-Indian Defence | d4 Nf6 c4 e6 Nc3 Bb4 e3 O-O Bd3 d5 Nf3 c5 O-O
+E32 | Nimzo-Indian Defence: Classical Variation | d4 Nf6 c4 e6 Nc3 Bb4 Qc2 O-O a3 Bxc3+ Qxc3
+E15 | Queen's Indian Defence | d4 Nf6 c4 e6 Nf3 b6 g3 Ba6 b3 Bb4+ Bd2 Be7
+D85 | Grunfeld Defence | d4 Nf6 c4 g6 Nc3 d5 cxd5 Nxd5 e4 Nxc3 bxc3 Bg7 Nf3 c5
+E97 | King's Indian Defence | d4 Nf6 c4 g6 Nc3 Bg7 e4 d6 Nf3 O-O Be2 e5 O-O Nc6 d5 Ne7
+E81 | King's Indian Defence: Samisch Variation | d4 Nf6 c4 g6 Nc3 Bg7 e4 d6 f3 O-O Be3 e5 d5
+A52 | Budapest Gambit | d4 Nf6 c4 e5 dxe5 Ng4 Bf4 Nc6 Nf3 Bb4+
+A57 | Benko Gambit | d4 Nf6 c4 c5 d5 b5
+A60 | Benoni Defence | d4 Nf6 c4 c5 d5 e6 Nc3 exd5 cxd5 d6
+A81 | Dutch Defence | d4 f5 g3 Nf6 Bg2 e6 Nf3
+
+# ---- Flank openings --------------------------------------------------
+A29 | English Opening | c4 e5 Nc3 Nf6 Nf3 Nc6
+A36 | English Opening: Symmetrical Variation | c4 c5 Nc3 Nc6 g3 g6 Bg2 Bg7
+A13 | English Opening | c4 e6 Nc3 d5 d4 Nf6
+A09 | Reti Opening | Nf3 d5 c4
+A03 | Bird's Opening | f4 d5 Nf3 Nf6 e3 g6

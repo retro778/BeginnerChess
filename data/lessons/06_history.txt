@@ -1,0 +1,55 @@
+# Beginner Chess lessons - Chapter 6: Styles in chess history
+
+LESSON romantic
+TITLE The Romantic era
+CHAPTER Chess styles in history
+SUMMARY Sacrifices and attacks (19th century).
+PAGE
+FEN start
+PLAY e4 e5 f4 exf4 Bc4 Qh4+ Kf1 b5 Bxb5 Nf6 Nf3 Qh6 d3 Nh5 Nh4 Qg5 Nf5 c6 g4 Nf6 Rg1 cxb5 h4 Qg6 h5 Qg5 Qf3 Ng8 Bxf4 Qf6 Nc3 Bc5 Nd5 Qxb2 Bd6
+TEXT In the 19th century many players loved the ROMANTIC style: fast development, open positions, gambits, sacrifices and direct attacks on the king. Defence was not taken very seriously!
+TEXT |This is the "Immortal Game" (Anderssen - Kieseritzky, London 1851). White has given away a bishop and is about to give both rooks - and still wins with a beautiful checkmate a few moves later.
+PAGE
+FEN start
+PLAY e4 e5 f4 exf4 Bc4 Qh4+ Kf1 b5 Bxb5 Nf6 Nf3 Qh6 d3 Nh5 Nh4 Qg5 Nf5 c6 g4 Nf6 Rg1 cxb5 h4 Qg6 h5 Qg5 Qf3 Ng8 Bxf4 Qf6 Nc3 Bc5 Nd5 Qxb2 Bd6 Bxg1 e5 Qxa1+ Ke2 Na6 Nxg7+ Kd8 Qf6+ Nxf6 Be7#
+HIGHLIGHT red d8
+TEXT The final position: with only a bishop and two knights left, White has checkmated the black king. Paul Morphy, the great American player of the 1850s, combined this attacking spirit with excellent development - see his "Opera Game" in the Famous Games.
+END
+
+LESSON classical
+TITLE The Classical school
+CHAPTER Chess styles in history
+SUMMARY Principles and small advantages.
+PAGE
+FEN start
+PLAY d4 d5 c4 e6 Nc3 Nf6 Bg5 Be7 e3 O-O Nf3 Nbd7 Rc1 c6 Bd3
+TEXT Wilhelm Steinitz, the first official World Champion (1886), showed that attacks only succeed when the position is ready for them. He taught players to collect small advantages: a better pawn structure, more space, the two bishops, a weak square in the enemy camp.
+TEXT |Siegbert Tarrasch turned these ideas into clear rules: occupy the centre with pawns, develop all pieces, give your pieces freedom. Positions like this solid Queen's Gambit are typical of the CLASSICAL style.
+END
+
+LESSON hypermodern
+TITLE The Hypermoderns
+CHAPTER Chess styles in history
+SUMMARY Control the centre from a distance.
+PAGE
+FEN start
+PLAY d4 Nf6 c4 g6 Nc3 Bg7 e4 d6 Nf3 O-O
+ARROW green g7d4
+TEXT In the 1920s the HYPERMODERN players - Aron Nimzowitsch, Richard Reti, Gyula Breyer and others - questioned the classical rules. Why occupy the centre with pawns? It can also be CONTROLLED FROM A DISTANCE, with pieces such as a fianchettoed bishop.
+TEXT |In this King's Indian Defence, Black lets White build a big pawn centre and plans to attack it later with ...e5 or ...c5. Nimzowitsch also wrote about prophylaxis, blockade and flexible pawn structures - ideas every strong player uses today.
+END
+
+LESSON modern
+TITLE Modern dynamic chess
+CHAPTER Chess styles in history
+SUMMARY Imbalance, counterplay and calculation.
+PAGE
+FEN start
+PLAY e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6
+TEXT After the Second World War the Soviet school, led by Mikhail Botvinnik, combined deep preparation with concrete calculation. Later champions such as Bobby Fischer and Garry Kasparov showed how powerful DYNAMIC play can be: unbalanced positions, initiative and counterplay are often worth more than a small static advantage.
+TEXT |Openings like this Sicilian Najdorf, where both sides have chances, are typical of modern chess. Today computers help players to test ideas, and they have shown that many "ugly" moves are perfectly good.
+PAGE
+FEN start
+TEXT Remember: these styles are not strict rules. Real games mix all of them - a classical opening can turn into a romantic attack, and a hypermodern setup can lead to a slow positional fight.
+TEXT |The best players know all these ideas and choose what the position needs. In Beginner Chess you can meet the styles yourself: try playing against the Aggressive, Positional or Defensive computer opponents!
+END

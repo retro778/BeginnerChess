@@ -1,0 +1,130 @@
+# Beginner Chess lessons - Chapter 5: Endgames
+# Starting positions of the "play it out" tasks were checked with the engine.
+
+LESSON kqk
+TITLE King and queen against king
+CHAPTER Endgames
+SUMMARY The first mate every player must know.
+PAGE
+FEN 8/8/8/3k4/8/8/8/3QK3 w - - 0 1
+TEXT With a queen and king against a lone king you can always force checkmate. The plan:
+TEXT |1. Use the queen to make the king's "box" smaller - a knight's move away from the king works well.|2. Push the king to the edge of the board.|3. Bring your own king closer.|4. Give checkmate on the edge, with the king's help.
+TEXT |Watch out for STALEMATE near the edge: always leave the king a square until you give mate!
+PAGE
+FEN 3k4/3Q4/3K4/8/8/8/8/8 b - - 0 1
+HIGHLIGHT red d8
+TEXT A typical final position: the queen gives check right in front of the king, protected by her own king. Checkmate!
+TASK
+FEN 8/8/8/4k3/8/8/8/3QK3 w - - 0 1
+TEXT Now you do it! The computer will defend. Checkmate within 25 moves.
+GOAL playmate 25
+HINT Make the king's box smaller with your queen, then walk your king up to help.
+SUCCESS Checkmate! You have mastered the queen mate.
+END
+
+LESSON krk
+TITLE King and rook against king
+CHAPTER Endgames
+SUMMARY Mate with the rook.
+PAGE
+FEN 8/8/8/8/4k3/8/8/R3K3 w - - 0 1
+ARROW green a1a8
+TEXT A rook and king can also force checkmate. The rook builds a wall that the king cannot cross, and you make the box smaller step by step.
+TEXT |Your own king is very important here: when the kings stand opposite each other, a rook check along the edge pushes the enemy king back.
+PAGE
+FEN 4k3/8/4K3/8/8/8/8/R7 w - - 0 1
+ARROW green a1a8
+TEXT The final picture: the kings face each other and the rook gives check along the back rank - checkmate (Ra8#).
+TASK
+FEN 8/8/8/4k3/8/8/8/R3K3 w - - 0 1
+TEXT Checkmate the computer's king with your king and rook, within 40 moves.
+GOAL playmate 40
+HINT First cut the king off with your rook, then bring your king closer. Give check when the kings face each other.
+SUCCESS Well done - the rook mate is one of the most useful techniques in chess!
+END
+
+LESSON pawn-endgames
+TITLE Pawn endgames: the king leads
+CHAPTER Endgames
+SUMMARY King in front of the pawn.
+PAGE
+FEN 4k3/8/4K3/4P3/8/8/8/8 w - - 0 1
+HIGHLIGHT green d6 e6 f6
+TEXT In pawn endgames the KING is a strong piece. It should walk IN FRONT of its pawn and clear the way.
+TEXT |If your king reaches one of the KEY SQUARES (here d6, e6 and f6 - two squares in front of the pawn) the pawn will promote, whatever the other side does.
+TASK
+FEN 4k3/8/4K3/4P3/8/8/8/8 w - - 0 1
+TEXT Promote your pawn within 12 moves against the computer.
+GOAL playpromote 12
+HINT Keep your king in front of the pawn and push the pawn only when it is safe.
+SUCCESS A new queen! Your king led the way perfectly.
+END
+
+LESSON opposition
+TITLE The opposition
+CHAPTER Endgames
+SUMMARY Kings face to face.
+PAGE
+FEN 8/4k3/8/4K3/4P3/8/8/8 b - - 0 1
+HIGHLIGHT yellow e5 e7
+TEXT When two kings stand on the same line with ONE square between them, they are "in opposition". The player who does NOT have to move "has the opposition" - the other king must give way.
+TEXT |Here it is Black's turn, so White has the opposition: the black king must step aside and the white king marches forward. White wins.
+PAGE
+FEN 8/4k3/8/4K3/4P3/8/8/8 w - - 0 1
+HIGHLIGHT yellow e5 e7
+TEXT The same position with WHITE to move: now Black has the opposition, and with correct play Black can hold the draw. One single tempo makes all the difference!
+TASK
+FEN 4k3/8/8/4K3/4P3/8/8/8 w - - 0 1
+TEXT Find the king move that wins: walk to a key square in front of your pawn!
+GOAL move Ke6 Kd6 Kf6
+HINT The key squares of the e4-pawn are d6, e6 and f6.
+SUCCESS Correct! Your king reached a key square, and the pawn will promote.
+FEEDBACK Kd5 After Kd5 Black plays Kd7 and holds the opposition. Try to get your king further forward!
+FEEDBACK Kf5 After Kf5 Black plays Kf7 and holds the opposition. Try to get your king further forward!
+END
+
+LESSON promotion-race
+TITLE The rule of the square
+CHAPTER Endgames
+SUMMARY Can the king catch the pawn?
+PAGE
+FEN 8/8/8/8/k6P/8/8/7K w - - 0 1
+HIGHLIGHT yellow d4 e4 f4 g4 h4 d5 e5 f5 g5 h5 d6 e6 f6 g6 h6 d7 e7 f7 g7 h7 d8 e8 f8 g8 h8
+TEXT Can a lonely king catch a passed pawn? Draw a SQUARE from the pawn to its promotion rank (the yellow square here).
+TEXT |If the king can step INTO the square on its move, it catches the pawn. If not, the pawn promotes. Here the black king on a4 is far outside - White wins the race.
+TASK
+FEN 8/8/8/8/k6P/8/8/7K w - - 0 1
+TEXT Win the race: promote your pawn within 6 moves!
+GOAL playpromote 6
+HINT Just run!
+SUCCESS The king never had a chance. The rule of the square saves a lot of counting.
+END
+
+LESSON passed-pawn-endgame
+TITLE Passed pawns in the endgame
+CHAPTER Endgames
+SUMMARY Create and push a passer.
+PAGE
+FEN 8/5k2/8/8/2P5/8/5K2/8 w - - 0 1
+HIGHLIGHT green c4
+TEXT In the endgame a PASSED PAWN is a huge advantage: the enemy king must run to stop it, and while it does, your king can attack the other pawns.
+TEXT |An OUTSIDE passed pawn (far from the kings, like the c-pawn here) is especially strong, because it lures the defending king far away.
+TASK
+FEN 8/8/8/8/k6P/8/8/7K w - - 0 1
+TEXT Practise: push your passed pawn to the end and promote it within 6 moves.
+GOAL playpromote 6
+HINT Every move counts - push!
+SUCCESS Passed pawns must be pushed!
+END
+
+LESSON rook-endgames
+TITLE Rook endgame principles
+CHAPTER Endgames
+SUMMARY The most common endgame.
+PAGE
+FEN r7/8/8/P5k1/8/8/8/R5K1 w - - 0 1
+ARROW green a1a4
+TEXT Rook endgames happen more often than any other endgame. Some golden rules:
+TEXT |- Put your rook BEHIND passed pawns - your own and your opponent's.|- Keep your rook ACTIVE; a passive rook that only defends often loses.|- Bring your KING into the game.|- Use your rook to CUT OFF the enemy king from the action.
+TEXT |Later you can learn two famous positions: the Lucena position (how to win) and the Philidor position (how to draw).
+END

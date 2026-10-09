@@ -1,0 +1,20 @@
+# BeginnerChess server - production configuration (freedomnet.tech).
+# Installed as /etc/beginnerchess/server.toml (owner root, group beginnerchess, 0640).
+# No secrets here. All settings and defaults: config.example.toml.
+
+[server]
+listen_host = "127.0.0.1"          # Nginx (TLS) forwards /chess/ws here; never public
+listen_port = 8765
+ws_path = "/chess/ws"
+health_path = "/chess/health"
+trusted_proxies = ["127.0.0.1", "::1"]
+
+database_path = "/var/lib/beginnerchess/beginnerchess.db"
+admin_socket = "/run/beginnerchess/admin.sock"
+admin_socket_mode = "660"
+log_level = "INFO"
+
+registration_enabled = true
+guest_access_enabled = true
+rated_games_enabled = true
+reconnect_grace_seconds = 60

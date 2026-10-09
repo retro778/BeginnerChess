@@ -1,0 +1,350 @@
+# Beginner Chess lessons - Chapter 1: First steps
+# Written for Beginner Chess (MIT licence). See lessons.bi for the format.
+
+LESSON board
+TITLE The chessboard
+CHAPTER First steps
+SUMMARY 64 squares, files and ranks.
+PAGE
+FEN 8/8/8/8/8/8/8/8 w - - 0 1
+HIGHLIGHT yellow h1
+TEXT Welcome to chess! The chessboard has 64 squares: 32 light and 32 dark ones.
+TEXT |Always put the board so that the square in the bottom right corner is a light square. Remember: "light on the right!"
+PAGE
+FEN 8/8/8/8/8/8/8/8 w - - 0 1
+HIGHLIGHT green a1 a2 a3 a4 a5 a6 a7 a8
+HIGHLIGHT blue b1 c1 d1 e1 f1 g1 h1
+TEXT The lines of squares going up the board are called FILES. They have letters: a, b, c, d, e, f, g and h.
+TEXT |The rows going across are called RANKS. They have numbers from 1 to 8.
+TEXT |The green squares are the a-file, the blue squares (with a1) are the first rank.
+PAGE
+FEN start
+HIGHLIGHT yellow d1 d8
+TEXT This is how the game begins. White's pieces are on ranks 1 and 2, Black's on ranks 7 and 8.
+TEXT |White always makes the first move. Look at the queens: the white queen stands on a light square and the black queen on a dark square - each queen on her own colour.
+END
+
+LESSON notation
+TITLE Chess notation
+CHAPTER First steps
+SUMMARY How squares and moves are written.
+PAGE
+FEN start
+HIGHLIGHT green e4
+HIGHLIGHT blue g1
+TEXT Every square has a name: first the file letter, then the rank number. The green square is e4. The blue square, where a knight stands, is g1.
+PAGE
+FEN start
+ARROW g1f3
+TEXT Moves are written with a capital letter for the piece: K = king, Q = queen, R = rook, B = bishop, N = knight. Pawns have no letter.
+TEXT |"Nf3" means: a knight moves to f3. "e4" means: a pawn moves to e4.
+TEXT |An "x" means a capture (Bxe5), "+" means check, "#" means checkmate, "O-O" is castling on the king's side and "O-O-O" castling on the queen's side.
+TASK
+FEN start
+TEXT Now you try! Play the move e4: the pawn in front of the king moves two squares forward.
+GOAL move e4
+HINT Click the pawn on e2, then click the square e4.
+SUCCESS Well done! 1.e4 is the most popular first move in chess.
+WRONG That is a legal move, but not e4. Find the pawn on e2!
+END
+
+LESSON king
+TITLE How the king moves
+CHAPTER First steps
+SUMMARY One square in any direction.
+PAGE
+FEN 8/8/8/8/3K4/8/8/8 w - - 0 1
+HIGHLIGHT green c3 c4 c5 d3 d5 e3 e4 e5
+TEXT The KING moves one square in any direction: forwards, backwards, sideways or diagonally.
+TEXT |The king is the most important piece. If your king is trapped (checkmate), you lose the game. That is why a king may never move to a square where it could be captured.
+TASK
+FEN 8/8/8/8/3K4/8/8/7k w - - 0 1
+TEXT Move your king one square, in any direction you like.
+GOAL piece d4
+HINT Click the white king, then one of the squares next to it.
+SUCCESS Good! The king takes small steps, one square at a time.
+TASK
+FEN 8/8/8/3p4/3K4/8/8/7k w - - 0 1
+TEXT The king can capture, too. Take the black pawn!
+GOAL move Kxd5
+HINT The pawn is right in front of your king.
+SUCCESS Yes! The king captured the pawn, because nobody was protecting it.
+END
+
+LESSON queen
+TITLE How the queen moves
+CHAPTER First steps
+SUMMARY The strongest piece.
+PAGE
+FEN 8/8/8/8/3Q4/8/8/8 w - - 0 1
+ARROW d4d8 d4h8 d4h4 d4g1 d4d1 d4a1 d4a4 d4a7
+TEXT The QUEEN is the strongest piece. She moves as far as she likes in a straight line - up, down, sideways - or diagonally.
+TEXT |She cannot jump over other pieces.
+TASK
+FEN k7/8/8/7n/8/8/8/3QK3 w - - 0 1
+TEXT A black knight is standing all alone. Capture it with your queen!
+GOAL move Qxh5
+HINT Look along the diagonal from d1 up to the right.
+SUCCESS Great! The queen can reach squares far away in a single move.
+END
+
+LESSON rook
+TITLE How the rook moves
+CHAPTER First steps
+SUMMARY Straight lines along ranks and files.
+PAGE
+FEN 8/8/8/8/3R4/8/8/8 w - - 0 1
+ARROW d4d8 d4h4 d4d1 d4a4
+TEXT The ROOK moves in straight lines: up, down and sideways, as far as it likes - but never diagonally, and it cannot jump.
+TEXT |Each player starts with two rooks, in the corners of the board.
+TASK
+FEN k7/8/8/8/p7/8/8/R3K3 w - - 0 1
+TEXT Capture the black pawn with your rook!
+GOAL move Rxa4
+HINT The pawn is on the same file as your rook.
+SUCCESS Well done! And now your rook is even giving check to the black king.
+END
+
+LESSON bishop
+TITLE How the bishop moves
+CHAPTER First steps
+SUMMARY Diagonals only.
+PAGE
+FEN 8/8/8/8/3B4/8/8/8 w - - 0 1
+ARROW d4h8 d4a7 d4g1 d4a1
+TEXT The BISHOP moves diagonally, as far as it likes. It cannot jump over pieces.
+TEXT |A bishop always stays on squares of the same colour. That is why you have one light-squared bishop and one dark-squared bishop.
+TASK
+FEN k6r/8/8/8/8/8/1B6/4K3 w - - 0 1
+TEXT The black rook in the corner is not protected. Win it with your bishop!
+GOAL move Bxh8
+HINT Follow the long diagonal from b2 to h8.
+SUCCESS Excellent! A rook is worth more than a bishop, so that was a great trade.
+END
+
+LESSON knight
+TITLE How the knight moves
+CHAPTER First steps
+SUMMARY The jumping L-shape.
+PAGE
+FEN 8/8/8/8/3N4/8/8/8 w - - 0 1
+HIGHLIGHT green b3 b5 c2 c6 e2 e6 f3 f5
+ARROW d4f5
+TEXT The KNIGHT moves in an L-shape: two squares in one direction and then one square to the side.
+TEXT |It is the only piece that can JUMP over other pieces. A knight always lands on a square of the other colour.
+TASK
+FEN k7/8/8/4p3/8/3N4/8/4K3 w - - 0 1
+TEXT Capture the pawn on e5 with your knight!
+GOAL move Nxe5
+HINT From d3: one square up, then... count the L-shape!
+SUCCESS Great jump!
+TASK
+FEN k7/8/8/8/8/8/PPP5/1N2K3 w - - 0 1
+TEXT Your knight is surrounded by pawns. No problem for a knight - jump out!
+GOAL piece b1
+HINT Click the knight on b1 to see where it can go.
+SUCCESS Yes! Only the knight can jump over other pieces like that.
+END
+
+LESSON pawn
+TITLE How the pawn moves
+CHAPTER First steps
+SUMMARY Forwards only, capturing diagonally.
+PAGE
+FEN 8/8/8/8/8/8/4P3/8 w - - 0 1
+HIGHLIGHT green e3 e4
+TEXT The PAWN moves straight forward, one square at a time. On its very first move it may move two squares.
+TEXT |Pawns never move backwards!
+PAGE
+FEN 8/8/8/3p1p2/4P3/8/8/8 w - - 0 1
+HIGHLIGHT red d5 f5
+ARROW red e4d5 e4f5
+TEXT Pawns capture differently: one square diagonally forward. The pawn on e4 can capture on d5 or on f5.
+TEXT |A pawn cannot capture straight ahead - a piece in front of it simply blocks it.
+TASK
+FEN k7/8/8/3p4/4P3/8/8/4K3 w - - 0 1
+TEXT Capture the black pawn with your pawn!
+GOAL move exd5
+HINT Pawns capture diagonally.
+SUCCESS Correct! The move is written exd5: the e-pawn captures on d5.
+END
+
+LESSON capture
+TITLE Capturing and piece values
+CHAPTER First steps
+SUMMARY Which pieces are worth more?
+PAGE
+FEN start
+TEXT When a piece moves to a square with an enemy piece, it captures it. The captured piece leaves the board.
+TEXT |Pieces have different values (in pawns): pawn 1, knight 3, bishop 3, rook 5, queen 9. The king cannot be captured - it is priceless!
+TEXT |Try to capture pieces worth more than the ones you give away.
+TASK
+FEN k7/8/8/3q4/8/2N5/8/4K3 w - - 0 1
+TEXT The black queen has come close to your knight. Can you capture it?
+GOAL move Nxd5
+HINT Which squares can the knight on c3 jump to?
+SUCCESS Fantastic! You won the queen - worth 9 pawns - with a knight.
+END
+
+LESSON check
+TITLE Check
+CHAPTER First steps
+SUMMARY When the king is attacked.
+PAGE
+FEN 4k3/8/8/8/8/8/8/4R1K1 b - - 0 1
+HIGHLIGHT red e8
+ARROW red e1e8
+TEXT When a king is attacked, we say it is IN CHECK. Here the white rook gives check to the black king.
+TEXT |A player in check must get out of check at once - nothing else is allowed.
+TASK
+FEN 4k3/8/8/8/8/8/8/R5K1 w - - 0 1
+TEXT Give check to the black king with your rook!
+GOAL check
+HINT The rook needs to reach the same file or rank as the king.
+SUCCESS Check! The black king is attacked and has to escape.
+END
+
+LESSON escape-check
+TITLE Getting out of check
+CHAPTER First steps
+SUMMARY Move, block or capture.
+PAGE
+FEN 4k3/4r3/8/8/8/8/3B4/4K3 w - - 0 1
+HIGHLIGHT red e1
+ARROW red e7e1
+TEXT There are three ways out of check:|1. MOVE the king to a safe square.|2. BLOCK the check by putting a piece in the way.|3. CAPTURE the attacking piece.
+TASK
+FEN 4k3/8/8/8/8/8/4r3/4K3 w - - 0 1
+TEXT You are in check from the rook. Nobody protects it - capture it!
+GOAL move Kxe2
+HINT Your king can capture pieces next to it.
+SUCCESS Perfect - the attacker is gone.
+TASK
+FEN 4k3/4r3/8/8/8/8/3B4/4K3 w - - 0 1
+TEXT Now block the check: put your bishop between the rook and your king.
+GOAL move Be3
+HINT Which square between e7 and e1 can the bishop reach?
+SUCCESS Blocked! The bishop shields your king.
+FEEDBACK Kf1 Moving the king also gets you out of check - but this time, try blocking with the bishop.
+FEEDBACK Kd1 Moving the king also gets you out of check - but this time, try blocking with the bishop.
+FEEDBACK Kf2 Moving the king also gets you out of check - but this time, try blocking with the bishop.
+FEEDBACK Kd2 Moving the king also gets you out of check - but this time, try blocking with the bishop.
+TASK
+FEN 4k3/8/8/8/8/8/8/r3K3 w - - 0 1
+TEXT No piece can capture the rook or block it. Move your king to safety!
+GOAL piece e1
+HINT Squares on the first rank are still attacked by the rook.
+SUCCESS Safe! Your king stepped off the rook's line.
+END
+
+LESSON checkmate
+TITLE Checkmate
+CHAPTER First steps
+SUMMARY How a chess game is won.
+PAGE
+FEN R5k1/5ppp/8/8/8/8/8/6K1 b - - 0 1
+HIGHLIGHT red g8
+ARROW red a8g8
+TEXT CHECKMATE means: the king is in check and there is NO way out - it cannot move, the check cannot be blocked and the attacker cannot be captured.
+TEXT |Checkmate ends the game. The player who gives checkmate wins!
+TASK
+FEN 6k1/5ppp/8/8/8/8/8/R5K1 w - - 0 1
+TEXT The black king is hiding behind its pawns. Give checkmate in one move!
+GOAL mate
+HINT The pawns block the king's escape squares. Attack along the back rank!
+SUCCESS Checkmate! This is called a "back-rank mate".
+TASK
+FEN k7/8/1K6/8/8/8/7Q/8 w - - 0 1
+TEXT Your king and queen work together. Find the checkmate!
+GOAL mate
+HINT Your king already guards the squares a7 and b7.
+SUCCESS Checkmate! The king and queen make a great team.
+END
+
+LESSON stalemate
+TITLE Stalemate
+CHAPTER First steps
+SUMMARY No move, but not in check: a draw!
+PAGE
+FEN 7k/5Q2/6K1/8/8/8/8/8 b - - 0 1
+HIGHLIGHT yellow h8
+TEXT Here it is Black's turn. The black king is NOT in check, but every square it could go to is attacked, and Black has no other pieces.
+TEXT |This is STALEMATE, and stalemate is a DRAW. Be careful when you are winning: always leave the other king a move, unless you give checkmate!
+TASK
+FEN 7k/8/4Q1K1/8/8/8/8/8 w - - 0 1
+TEXT Give checkmate - but watch out for stalemate!
+GOAL mate
+HINT Give check along the back rank.
+SUCCESS Checkmate! You avoided the stalemate trap.
+FEEDBACK Qf7 Careful! After Qf7 Black cannot move but is not in check: that is stalemate, a draw. Try again.
+WRONG That is not checkmate yet. Look for a check the king cannot escape.
+END
+
+LESSON castling
+TITLE Castling
+CHAPTER First steps
+SUMMARY A special move for king safety.
+PAGE
+FEN r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1
+ARROW e1g1 h1f1
+TEXT CASTLING is a special move of the king and a rook. The king moves two squares towards the rook, and the rook jumps over to the other side of the king.
+TEXT |It is the only move where two pieces move at once, and it helps to put your king in a safe place.
+PAGE
+FEN 4kr2/8/8/8/8/8/PPPPP1PP/RNBQK2R w KQ - 0 1
+HIGHLIGHT red f1
+ARROW red f8f1
+TEXT You may only castle if:|- the king and that rook have not moved yet,|- there are no pieces between them,|- the king is not in check, and does not pass through or land on an attacked square.
+TEXT |Here White cannot castle, because the black rook attacks f1.
+TASK
+FEN 4k3/8/8/8/8/8/PPPPPPPP/RNBQK2R w KQ - 0 1
+TEXT Castle on the king's side!
+GOAL castle
+HINT Click the king and then the square g1.
+SUCCESS Well done! Your king is now safely tucked away in the corner.
+END
+
+LESSON en-passant
+TITLE En passant
+CHAPTER First steps
+SUMMARY The special pawn capture.
+PAGE
+FEN 8/8/8/3pP3/8/8/8/8 w - - 0 1
+ARROW e5d6
+HIGHLIGHT red d5
+TEXT A special rule: if a pawn moves two squares and lands right beside an enemy pawn, the enemy pawn may capture it "in passing" - EN PASSANT in French - as if it had moved only one square.
+TEXT |This is only allowed on the very next move!
+TASK
+FEN 4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1
+TEXT Black has just moved the pawn from d7 to d5. Capture it en passant!
+GOAL move exd6
+HINT Your e5-pawn goes diagonally to d6, and the pawn on d5 disappears.
+SUCCESS Yes! That was en passant - you now know every special rule of chess.
+END
+
+LESSON promotion
+TITLE Pawn promotion
+CHAPTER First steps
+SUMMARY A pawn can become a queen!
+PAGE
+FEN 8/1P6/8/8/8/8/8/8 w - - 0 1
+ARROW b7b8
+TEXT When a pawn reaches the last rank, it PROMOTES: it turns into a queen, rook, bishop or knight - your choice!
+TEXT |Almost always you choose a queen, the strongest piece. You can even have two or more queens!
+TASK
+FEN 7k/1P6/8/8/8/8/8/4K3 w - - 0 1
+TEXT March your pawn to the end of the board and make a new queen!
+GOAL promote
+HINT Move the pawn to b8, then choose the queen.
+SUCCESS A new queen! Pawns are small, but they dream big.
+END
+
+LESSON draws
+TITLE Draws
+CHAPTER First steps
+SUMMARY When nobody wins.
+PAGE
+FEN 8/8/4k3/8/8/3K4/8/8 w - - 0 1
+TEXT A game can also end in a DRAW (nobody wins):|- STALEMATE: the player to move has no legal move but is not in check.|- NOT ENOUGH PIECES to checkmate, for example king against king.|- AGREEMENT: both players agree to a draw.
+TEXT |- REPETITION: when the same position appears three times, the player to move may CLAIM a draw.|- FIFTY MOVES without any capture or pawn move: a draw may be claimed.
+TEXT |In Beginner Chess you can claim with the "Claim Draw" button. After five repetitions or 75 such moves the game is drawn automatically.
+END

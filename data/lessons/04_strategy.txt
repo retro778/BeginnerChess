@@ -1,0 +1,361 @@
+# Beginner Chess lessons - Chapter 4: Strategy
+
+LESSON pawn-structure
+TITLE Pawn structure
+CHAPTER Strategy
+SUMMARY The skeleton of the position.
+PAGE
+FEN start
+PLAY d4 d5 c4 e6 Nc3 Nf6 cxd5 exd5
+HIGHLIGHT yellow a2 b2 d4 f2 g2 h2 a7 b7 c7 d5 f7 g7 h7
+TEXT Pawns move slowly and can never go back, so the PAWN STRUCTURE changes little during a game. It is like the skeleton of the position: it shows where the pieces belong and which plans make sense.
+TEXT |Strong players look at the pawns first. Are any pawns weak? Which files are open? Where is there space?
+TASK
+FEN start
+PLAY e4 e6 d4 d5 e5 c5
+HIGHLIGHT yellow d4 e5
+ARROW red c5d4
+TEXT Your pawns on d4 and e5 make a strong CHAIN. Black's c-pawn attacks d4, the base of the chain. Protect d4 and keep your chain!
+GOAL move c3 Nf3 Be3
+HINT A pawn on c3 would protect d4 - and then the chain is b2-c3-d4-e5. A piece can also help.
+SUCCESS Well done! Your d4-pawn is protected and your pawn chain stays strong.
+FEEDBACK dxc5 Taking on c5 breaks up your own chain and gives Black the centre. Try to protect d4 instead.
+WRONG That move does not protect the d4-pawn. Which pawn or piece can guard it?
+END
+
+LESSON isolated-pawn
+TITLE The isolated pawn
+CHAPTER Strategy
+SUMMARY A pawn without neighbours.
+PAGE
+FEN start
+PLAY d4 d5 c4 e6 Nc3 c5 cxd5 exd5 Nf3 Nc6 g3 Nf6 Bg2 Be7 O-O O-O dxc5 Bxc5
+HIGHLIGHT red d5
+HIGHLIGHT yellow d4
+TEXT An ISOLATED PAWN has no friendly pawns on the files next to it, so no pawn can ever protect it. Here the black pawn on d5 is isolated.
+TEXT |Its weakness: it must be defended by pieces, and the square in front of it (d4) is a great spot for an enemy piece. Its strength: it controls central squares and gives the pieces open lines. Play against it by blockading and attacking it; play with it by being active.
+TASK
+FEN 3r1bk1/pp3ppp/8/3p4/8/2N1P3/PP3PPP/3R2K1 w - - 0 20
+HIGHLIGHT red d5
+TEXT Black's d5-pawn is isolated: no black pawn can ever protect it. Count: you attack it twice, Black defends it only once. Win it!
+GOAL move Nxd5 Rxd5
+HINT Your knight and your rook both attack d5. Only the black rook defends it.
+SUCCESS You won the isolated pawn! With no pawn friends, it could only be defended by pieces - and that was not enough.
+WRONG The d5-pawn is still there. Look at which of your pieces attack it.
+END
+
+LESSON doubled-pawns
+TITLE Doubled pawns
+CHAPTER Strategy
+SUMMARY Two pawns on one file.
+PAGE
+FEN start
+PLAY e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6
+HIGHLIGHT red c7 c6
+TEXT DOUBLED PAWNS stand on the same file, one in front of the other. They cannot protect each other and the front one blocks the back one.
+TEXT |In this opening Black accepted doubled c-pawns. In return Black got the two bishops and an open d-file. Doubled pawns are usually a small weakness - often more important in the endgame than in the middlegame.
+TASK
+FEN start
+PLAY d4 Nf6 c4 e6 Nc3 Bb4 a3
+HIGHLIGHT red b4
+ARROW red a3b4
+TEXT You are Black. White's pawn on a3 attacks your bishop. Instead of running away, give White DOUBLED PAWNS!
+GOAL move Bxc3
+HINT Take the knight on c3. White must take back with a pawn.
+SUCCESS Good! After bxc3 White has two pawns on the c-file. You can attack them later.
+FEEDBACK Be7 Retreating is possible, but here you can give White doubled pawns. Take on c3!
+WRONG Your bishop is still attacked. Capture something with it!
+END
+
+LESSON backward-pawn
+TITLE The backward pawn
+CHAPTER Strategy
+SUMMARY A pawn left behind.
+PAGE
+FEN start
+PLAY e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Be2 e5 Nb3
+HIGHLIGHT red d6
+HIGHLIGHT yellow d5
+TEXT A BACKWARD PAWN has fallen behind its neighbours: no pawn can protect it, and advancing it is difficult. Here the black pawn on d6 is backward, and the square d5 in front of it is a "hole" that White's pieces would love to use.
+TEXT |Black accepts this on purpose, for activity and central control - but must always watch d5.
+TASK
+FEN 3r1bk1/1p3ppp/p2p4/4p3/4P3/2N5/PPP2PPP/3R2K1 w - - 0 25
+HIGHLIGHT red d6
+HIGHLIGHT yellow d5
+TEXT Black's d6-pawn is backward and d5 is a hole in front of it. Put your knight on the hole! No black pawn can chase it away, and it stops the d6-pawn from moving.
+GOAL move Nd5
+HINT Which piece can jump to d5?
+SUCCESS A great knight! It blocks the backward pawn and nobody can drive it away with a pawn.
+FEEDBACK Rd5 The rook can go there, but the hole is the perfect home for a knight. Rooks prefer open files.
+WRONG Look at the square d5, right in front of the backward pawn.
+END
+
+LESSON passed-pawns
+TITLE Passed pawns
+CHAPTER Strategy
+SUMMARY "Passed pawns must be pushed!"
+PAGE
+FEN 8/6k1/8/3P4/8/2p5/5K2/8 w - - 0 1
+HIGHLIGHT green d5
+HIGHLIGHT red c3
+TEXT A PASSED PAWN has no enemy pawns in front of it or on the neighbouring files - nothing but pieces can stop it from reaching the end. Passed pawns get stronger as they advance, especially in the endgame.
+TASK
+FEN 8/8/8/3P4/8/5k2/8/3K4 w - - 0 1
+TEXT Your d-pawn is passed and the black king is far away. Push it!
+GOAL move d6
+HINT Count: can the black king reach the promotion square in time?
+SUCCESS Right! The king is too far away: d7 and d8=Q will follow.
+END
+
+LESSON weak-squares
+TITLE Weak squares
+CHAPTER Strategy
+SUMMARY Holes that pawns can no longer guard.
+PAGE
+FEN start
+PLAY e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Be2 e5 Nb3
+HIGHLIGHT red d5
+ARROW green c3d5
+ARROW green e4d5
+TEXT A WEAK SQUARE (or "hole") is a square that can no longer be protected by a pawn. Enemy pieces can sit there and nobody can chase them away with a pawn.
+TEXT |Here d5 is a hole in Black's position: the c- and e-pawns have moved past it. Every pawn move leaves weaknesses behind, so think before you push!
+TASK
+FEN 2b2rk1/1p3ppp/8/pNp1p3/2P1P3/8/PP3PPP/5RK1 w - - 0 20
+HIGHLIGHT red d6
+TEXT Black's c- and e-pawns have moved past d6, so d6 is a hole. Jump into it with your knight!
+GOAL move Nd6
+HINT Your knight on b5 can reach the hole in one jump.
+SUCCESS From d6 your knight attacks b7, c8 and f7 - and no black pawn can ever chase it away!
+WRONG Find the hole in Black's position and put your knight there.
+END
+
+LESSON outposts
+TITLE Outposts
+CHAPTER Strategy
+SUMMARY The perfect home for a knight.
+PAGE
+FEN start
+PLAY e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Be2 e5 Nb3 Be7 O-O O-O Be3 Be6 Nd5
+HIGHLIGHT green d5
+TEXT An OUTPOST is a strong square, protected by your own pawn or pieces, that enemy pawns can never attack. A knight on an outpost is often as strong as a rook!
+TEXT |Here the white knight has landed on d5, an outpost in the middle of the board.
+TASK
+FEN 4rbk1/3b1p1p/p2p2p1/1pp1p3/4P3/1PPP4/P1B2PPP/4RNK1 w - - 0 20
+HIGHLIGHT green d5
+TEXT The square d5 is an outpost: your e4-pawn protects it and no black pawn can ever attack it. Bring your knight there in two jumps!
+GOAL move Ne3
+REPLY Bg7
+GOAL move Nd5
+HINT First jump to e3. From there the knight can reach d5.
+SUCCESS Perfect! The knight sits on its outpost in the middle of the board.
+FEEDBACK Ng3 From g3 the knight can go to f5, but Black's g6-pawn guards that square. Head for d5!
+WRONG The knight needs two jumps to reach d5. Which square is on the way?
+END
+
+LESSON open-files
+TITLE Open files
+CHAPTER Strategy
+SUMMARY Highways for rooks.
+PAGE
+FEN r4rk1/pp3ppp/2n1bn2/8/8/2N1BN2/PP3PPP/R4RK1 w - - 0 14
+HIGHLIGHT green c1 c2 c3 c4 c5 c6 c7 c8 d1 d2 d3 d4 d5 d6 d7 d8 e1 e2 e3 e4 e5 e6 e7 e8
+TEXT An OPEN FILE has no pawns on it at all. Rooks belong on open files: from there they can enter the enemy position, often reaching the seventh rank where they attack pawns.
+TASK
+FEN r4rk1/pp3ppp/2n1bn2/8/8/2N1BN2/PP3PPP/R4RK1 w - - 0 14
+TEXT The c-, d- and e-files are open. Put one of your rooks on an open file!
+GOAL move Rad1 Rfd1 Rac1 Rfc1 Rae1 Rfe1
+HINT Rooks can move along the first rank.
+SUCCESS Your rook now controls an open file.
+END
+
+LESSON semi-open-files
+TITLE Semi-open files
+CHAPTER Strategy
+SUMMARY Pressure on an enemy pawn.
+PAGE
+FEN start
+PLAY e4 c5 Nf3 d6 d4 cxd4 Nxd4
+HIGHLIGHT green c8 c7 c6 c5 c4 c3 c2
+HIGHLIGHT blue d1 d2 d3 d4 d5 d6 d7
+TEXT A SEMI-OPEN file has only enemy pawns on it. Here Black has a semi-open c-file (green) and White a semi-open d-file (blue).
+TEXT |Rooks and queens on a semi-open file put pressure on the enemy pawn at its end - here the c2-pawn and the d6-pawn.
+TASK
+FEN r4rk1/pp2ppbp/3pbnp1/8/4P3/2N1BN2/PPP2PPP/R2R2K1 b - - 0 12
+HIGHLIGHT green c8 c7 c6 c5 c4 c3 c2
+TEXT You are Black. The c-file is semi-open for you: only White's c2-pawn is on it. Put a rook on the c-file!
+GOAL move Rfc8
+HINT Both rooks can go to c8. But which rook is needed to protect a pawn?
+SUCCESS Good! Your rook puts pressure on the c-file, and your a7-pawn is still protected.
+FEEDBACK Rac8 Careful! Then your a7-pawn has no defender and White plays Bxa7. Use the other rook!
+WRONG Put one of your rooks on the c-file.
+END
+
+LESSON good-bad-bishops
+TITLE Good and bad bishops
+CHAPTER Strategy
+SUMMARY Bishops and your own pawns.
+PAGE
+FEN start
+PLAY e4 e6 d4 d5 e5 c5 c3 Nc6 Nf3
+HIGHLIGHT red c8
+HIGHLIGHT yellow d5 e6
+TEXT A bishop is BAD when many of its own pawns stand on squares of its colour: they block it. A bishop is GOOD when its pawns are on the other colour.
+TEXT |Here Black's bishop on c8 is a "bad bishop": the pawns on d5 and e6 are on light squares and wall it in. A good rule: put your pawns on the opposite colour of your bishop.
+TASK
+FEN start
+PLAY e4 e6 d4 d5 e5 b6 c3 Qd7 Bd3
+HIGHLIGHT red c8
+HIGHLIGHT green d3
+TEXT You are Black. Your bishop on c8 is bad, blocked by your pawns on d5 and e6. White's bishop on d3 is good. Offer to trade your bad bishop for it!
+GOAL move Ba6
+HINT Your bishop can leave through b7 or a6. Which square faces White's bishop?
+SUCCESS Clever! If the bishops are traded, you have got rid of your bad bishop and White has lost a good one.
+FEEDBACK Bb7 On b7 the bishop still bites on your own d5-pawn. Look for a trade instead!
+WRONG Use your bad bishop on c8 and offer a trade.
+END
+
+LESSON knight-vs-bishop
+TITLE Knight against bishop
+CHAPTER Strategy
+SUMMARY Which minor piece is better?
+PAGE
+FEN 6k1/5ppp/4p3/3pP3/3N4/2P5/5PPP/3b2K1 w - - 0 1
+HIGHLIGHT green d4
+HIGHLIGHT red d1
+TEXT Knights and bishops are both worth about 3 pawns, but they like different positions.
+TEXT |BISHOPS love open positions with pawns on both sides of the board - they are long-range pieces. KNIGHTS love closed positions and outposts, where they can jump over the pawns.
+TEXT |In this position the pawns are fixed on light squares, so Black's light-squared bishop has little to attack, while the white knight sits on a fine central square.
+TASK
+FEN 6k1/5ppp/4p3/3pP3/8/2P2N2/5PPP/3b2K1 w - - 0 1
+HIGHLIGHT red f3
+TEXT The black bishop attacks your knight. Find the best square for the knight: in the centre, where the light-squared bishop and the black pawns can never attack it.
+GOAL move Nd4
+HINT The bishop only moves on light squares. Look for a dark square in the centre.
+SUCCESS Excellent! On d4 the knight is safe forever and controls many squares. A strong knight against a bad bishop!
+WRONG Find a square in the centre for your knight, where the bishop cannot reach it.
+END
+
+LESSON space
+TITLE Space advantage
+CHAPTER Strategy
+SUMMARY More room for your pieces.
+PAGE
+FEN start
+PLAY e4 e6 d4 d5 e5
+HIGHLIGHT green f6 g5 h6 d6
+TEXT The side whose pawns are further advanced has more SPACE: more squares for its pieces behind the pawns, and less room for the opponent.
+TEXT |Here White's pawn on e5 takes away the f6-square from Black's knight and gives White more room on the king's side. The side with less space should look for pawn breaks (here ...c5 and ...f6) to attack the advanced pawns.
+TASK
+FEN start
+PLAY e4 e6 d4 d5 e5
+HIGHLIGHT yellow d4 e5
+TEXT You are Black and have less space. Attack White's pawn chain at its BASE, the d4-pawn, with a pawn break!
+GOAL move c5
+HINT Which pawn move attacks d4?
+SUCCESS Yes! c5 is the typical break: it attacks the base of White's chain and fights for space.
+FEEDBACK f6 The move f6 attacks the head of the chain. It is possible, but hitting the base on d4 is stronger.
+WRONG Look for a pawn move that attacks the d4-pawn.
+END
+
+LESSON king-safety
+TITLE King safety
+CHAPTER Strategy
+SUMMARY Keep the shelter intact.
+PAGE
+FEN r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 7
+HIGHLIGHT green f2 g2 h2 f7 g7 h7
+TEXT A castled king is safe behind its PAWN SHIELD. Every pawn move in front of your king makes holes that enemy pieces can use.
+TEXT |So: castle early, don't push the pawns in front of your king without a reason, and keep some defenders (a knight on f3 or f6 is a great defender) near your king.
+TASK
+FEN start
+PLAY e4 e5 Nf3 Nc6 Bc4 Bc5 d3 Nf6 Nc3 d6
+HIGHLIGHT yellow e1
+TEXT Your knights and bishops are out, but your king is still in the middle. Bring it to safety behind the pawn shield!
+GOAL castle
+HINT Your king and rook can make one special move together.
+SUCCESS Your king is safe behind the f2-, g2- and h2-pawns, and your rook joins the game.
+WRONG Your king is still in the centre. Castle!
+END
+
+LESSON piece-activity
+TITLE Active pieces
+CHAPTER Strategy
+SUMMARY Every piece should have a job.
+PAGE
+FEN 6k1/1R3ppp/8/8/8/8/5PPP/r5K1 w - - 0 1
+ARROW green b7f7
+TEXT An ACTIVE piece attacks, controls many squares and takes part in the game. A PASSIVE piece only defends or stands still.
+TEXT |Here White's rook on the seventh rank is very active, attacking the black pawns. Ask yourself in every position: "Which is my worst piece?" - and try to improve it.
+TASK
+FEN r5k1/pp3ppp/8/8/8/7P/PP3PP1/3R2K1 w - - 0 25
+HIGHLIGHT green d7
+TEXT Make your rook as active as possible! The d-file is open. Where does the rook attack the most black pawns?
+GOAL move Rd7
+HINT The seventh rank is where the black pawns stand.
+SUCCESS Great! Your rook attacks b7 and f7, while Black's rook is still sitting in the corner.
+FEEDBACK Rd8+ Careful! Black's rook on a8 guards the eighth rank: after Rxd8 your rook is gone.
+WRONG Use the open d-file to bring your rook deep into Black's position.
+END
+
+LESSON exchanges
+TITLE When to exchange
+CHAPTER Strategy
+SUMMARY Trades change the position.
+PAGE
+FEN 6k1/5ppp/8/8/8/8/1Q3PPP/r5K1 w - - 0 1
+TEXT Exchanging pieces changes the character of the game. Some simple rules:
+TEXT |- When you are AHEAD in material, exchange pieces (but not pawns): the simpler the position, the easier it is to win.|- When you are BEHIND, avoid exchanges and keep pieces for counterplay.|- Exchange your bad pieces for your opponent's good ones.|- Exchange an attacker that threatens your king.
+TASK
+FEN 3r4/pp2kpp1/8/8/8/5K2/PP3PPP/3R4 w - - 0 30
+TEXT You are a pawn ahead. Trade the rooks: the king and pawn ending is easy for you!
+GOAL move Rxd8
+HINT When you are ahead, exchange pieces. Which capture trades the rooks?
+SUCCESS Good! After Kxd8 you have an extra pawn and nothing is left to defend Black.
+WRONG When you are ahead, try to trade pieces. Can you trade the rooks?
+END
+
+LESSON prophylaxis
+TITLE Prophylaxis
+CHAPTER Strategy
+SUMMARY Stop your opponent's plan.
+PAGE
+FEN start
+PLAY e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 O-O h3
+HIGHLIGHT green h3
+ARROW red c8g4
+TEXT PROPHYLAXIS means preventing your opponent's ideas before they happen. The question is: "What does my opponent want to do?"
+TEXT |In this famous opening (the Ruy Lopez) White plays h3, so that Black's bishop cannot come to g4 and pin the knight. Small moves like this make big plans possible.
+TASK
+FEN start
+PLAY e4 e5 Nf3 Nc6 Bc4 Bc5 d3 Nf6 c3 d6 O-O O-O
+ARROW red c8g4
+HIGHLIGHT yellow f3
+TEXT Black wants to play Bg4 and pin your knight to your queen. Stop this idea with a small pawn move!
+GOAL move h3
+HINT Which pawn can guard the square g4?
+SUCCESS Exactly! Now Black's bishop cannot come to g4. You stopped the plan before it happened.
+WRONG That does not stop Bg4. Which pawn can control the square g4?
+END
+
+LESSON planning
+TITLE Making a plan
+CHAPTER Strategy
+SUMMARY Think in steps.
+PAGE
+FEN start
+PLAY d4 d5 c4 e6 Nc3 Nf6 cxd5 exd5 Bg5 c6 e3 Be7 Bd3 O-O Qc2 Nbd7 Nf3 Re8 O-O Nf8 Rab1
+ARROW green b2b4
+ARROW green b4b5
+TEXT A PLAN is a goal for the next several moves. To find one:|1. Look at the pawn structure.|2. Find weaknesses - yours and your opponent's.|3. Decide where your pieces belong, and improve your worst piece.
+TEXT |In this position White's plan is the "minority attack": push the b-pawn to b4 and b5, to create a weak pawn in Black's queen's side. Black will look for play on the king's side.
+TASK
+FEN start
+PLAY d4 d5 c4 e6 Nc3 Nf6 cxd5 exd5 Bg5 c6 e3 Be7 Bd3 O-O Qc2 Nbd7 Nf3 Re8 O-O Nf8 Rab1 Be6
+ARROW green b2b4
+TEXT Your rook on b1 is ready. Start your plan, the minority attack!
+GOAL move b4
+HINT Push the pawn that the rook stands behind.
+SUCCESS The plan has started: next comes b5, to attack Black's c6-pawn.
+FEEDBACK b3 The plan is to reach b5 quickly - push the pawn two squares!
+WRONG Follow the plan: the b-pawn goes forward.
+END

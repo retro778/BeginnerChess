@@ -1,0 +1,55 @@
+# BeginnerChess server configuration (example - contains no secrets).
+# Copy to /etc/beginnerchess/server.toml and start with --config, or set the
+# path in BEGINNERCHESS_CONFIG. Every setting can also be overridden with an
+# environment variable BCS_<NAME IN CAPITALS>, e.g. BCS_LOG_LEVEL=DEBUG.
+
+[server]
+# Keep the server on localhost; the reverse proxy (TLS) forwards /chess/ws here.
+listen_host = "127.0.0.1"
+listen_port = 8765
+ws_path = "/chess/ws"
+health_path = "/chess/health"
+# X-Forwarded-For is only believed from these addresses (the reverse proxy).
+trusted_proxies = ["127.0.0.1", "::1"]
+
+database_path = "/var/lib/beginnerchess/beginnerchess.db"
+log_level = "INFO"            # DEBUG, INFO, WARNING, ERROR
+
+# Limits
+max_connections = 500
+max_connections_per_ip = 8
+max_message_size = 16384      # bytes per client message
+hello_timeout = 10            # seconds
+heartbeat_interval = 20       # seconds between WebSocket pings
+heartbeat_timeout = 20        # seconds to wait for the pong
+rate_limit_burst = 20         # messages at once
+rate_limit_per_second = 5     # sustained messages per second
+max_violations = 10           # invalid requests before the connection is closed
+
+# Games
+reconnect_grace_seconds = 60
+first_move_seconds = 30
+
+# Features
+registration_enabled = true
+guest_access_enabled = true
+rated_games_enabled = true
+
+# Optional: TLS directly in the server (only if no reverse proxy is used).
+# tls_cert_file = "/etc/beginnerchess/fullchain.pem"
+# tls_key_file = "/etc/beginnerchess/privkey.pem"
+
+# Accounts
+session_days = 30            # a login is remembered this long without use
+
+# Abuse limits
+new_connections_per_minute = 30   # per address
+login_timeout = 300               # seconds a greeted connection may stay without logging in
+registrations_per_hour = 5        # per address
+challenges_per_minute = 10        # per player
+matchmaking_per_minute = 12       # per player
+sessions_per_user = 10            # remembered logins per account
+
+# Administration (Unix socket; permissions decide who may administer)
+# admin_socket = "/run/beginnerchess/admin.sock"
+# admin_socket_mode = "660"

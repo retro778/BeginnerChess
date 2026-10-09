@@ -1,0 +1,735 @@
+# Beginner Chess puzzles. Written for Beginner Chess (MIT licence).
+# Every solution is checked by tests/test_content with the engine.
+
+# ---------------------------------------------------------------- Mate in one
+PUZZLE m1-01
+TITLE The back rank
+CATEGORY Mate in one
+LEVEL 1
+FEN 6k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1
+MOVES Rd8#
+HINT The black king is shut in by its own pawns.
+EXPLAIN Rd8 is checkmate: the king cannot escape because its own pawns block f7, g7 and h7. This is the famous back-rank mate.
+END
+
+PUZZLE m1-02
+TITLE Queen and king
+CATEGORY Mate in one
+LEVEL 1
+FEN k7/8/1K6/8/8/8/7Q/8 w - - 0 1
+MOVES Qh8#
+HINT Your king guards a7 and b7. Attack the back rank.
+EXPLAIN The queen checks along the eighth rank and the king covers the squares on the seventh rank. Several queen moves along the back rank give mate.
+END
+
+PUZZLE m1-03
+TITLE Smothered
+CATEGORY Mate in one
+LEVEL 2
+FEN 6rk/6pp/8/6N1/8/8/8/6K1 w - - 0 1
+MOVES Nf7#
+HINT The king is surrounded by its own pieces. Which piece can jump in?
+EXPLAIN Nf7 is a "smothered mate": the king's own rook and pawns take away all its squares.
+END
+
+PUZZLE m1-04
+TITLE Scholar's mate
+CATEGORY Mate in one
+LEVEL 1
+FEN r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5Q2/PPPP1PPP/RNB1K1NR w KQkq - 4 4
+MOVES Qxf7#
+HINT Queen and bishop aim at the same weak square.
+EXPLAIN Qxf7 is mate: the queen is protected by the bishop on c4, and the f7-pawn was only guarded by the king.
+END
+
+PUZZLE m1-05
+TITLE Fool's mate
+CATEGORY Mate in one
+LEVEL 1
+FEN rnbqkbnr/pppp1ppp/8/4p3/6P1/5P2/PPPPP2P/RNBQKBNR b KQkq - 0 2
+MOVES Qh4#
+HINT White has opened the diagonal to the king.
+EXPLAIN Qh4 is checkmate after only two moves - the fastest possible win in chess. Never weaken your king like White did with f3 and g4!
+END
+
+PUZZLE m1-06
+TITLE Rook and knight
+CATEGORY Mate in one
+LEVEL 2
+FEN 7k/8/5N2/8/8/8/8/6RK w - - 0 1
+MOVES Rg8#
+HINT The knight covers g8 and h7.
+EXPLAIN Rg8 is mate. The knight protects the rook and also guards h7 - a pattern called the "Arabian mate", known for over a thousand years.
+END
+
+PUZZLE m1-07
+TITLE Black strikes
+CATEGORY Mate in one
+LEVEL 1
+FEN 6k1/8/8/8/8/8/r4PPP/6K1 b - - 0 1
+MOVES Ra1#
+HINT White's king is stuck behind its pawns, too.
+EXPLAIN Ra1 is a back-rank mate for Black. Moving a pawn in front of your king early ("making luft") prevents this.
+END
+
+PUZZLE m1-08
+TITLE The rook's wall
+CATEGORY Mate in one
+LEVEL 1
+FEN 7k/8/6K1/8/8/8/8/R7 w - - 0 1
+MOVES Ra8#
+HINT Your king already guards the seventh rank.
+EXPLAIN Ra8 is mate: the rook checks along the eighth rank and the white king covers g7 and h7.
+END
+
+PUZZLE m1-09
+TITLE The knight came too late
+CATEGORY Mate in one
+LEVEL 1
+FEN r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4
+MOVES Qxf7#
+HINT Black attacked your queen, but forgot about f7.
+EXPLAIN Qxf7 is mate. Black's knight move to f6 attacked the queen but did not defend f7.
+END
+
+PUZZLE m1-10
+TITLE The queen kiss
+CATEGORY Mate in one
+LEVEL 1
+FEN 4k3/7Q/4K3/8/8/8/8/8 w - - 0 1
+MOVES Qe7#
+HINT Put the queen right next to the king, protected by your king.
+EXPLAIN Qe7 is mate: the king cannot take the queen because your king protects her.
+END
+
+# ---------------------------------------------------------------- Mate in two
+PUZZLE m2-01
+TITLE Doubled rooks
+CATEGORY Mate in two
+LEVEL 2
+FEN 2r3k1/5ppp/8/8/8/8/4RPPP/4R1K1 w - - 0 1
+MOVES Re8+ Rxe8 Rxe8#
+HINT Give check on the back rank with the front rook.
+EXPLAIN 1.Re8+ Rxe8 2.Rxe8#. Black's rook can capture one white rook, but the second one gives mate.
+END
+
+PUZZLE m2-02
+TITLE Philidor's legacy
+CATEGORY Mate in two
+LEVEL 3
+FEN r6k/6pp/7N/8/2Q5/8/8/6K1 w - - 0 1
+MOVES Qg8+ Rxg8 Nf7#
+HINT A queen sacrifice! Which square can only be answered by a capture?
+EXPLAIN 1.Qg8+ Rxg8 (the king cannot take, the knight guards g8) 2.Nf7# - smothered mate.
+END
+
+PUZZLE m2-03
+TITLE Queen sacrifice
+CATEGORY Mate in two
+LEVEL 3
+FEN r3r1k1/5ppp/8/8/8/8/4QPPP/4R1K1 w - - 0 1
+MOVES Qxe8+ Rxe8 Rxe8#
+HINT Capture with the queen first.
+EXPLAIN 1.Qxe8+ Rxe8 2.Rxe8#. The queen sacrifice deflects Black's last defender of the back rank.
+END
+
+PUZZLE m2-04
+TITLE Clear the way
+CATEGORY Mate in two
+LEVEL 2
+FEN 3r2k1/5ppp/8/4R3/8/8/5PPP/4Q1K1 w - - 0 1
+MOVES Re8+ Rxe8 Qxe8#
+HINT Your rook is standing in your queen's way.
+EXPLAIN 1.Re8+ Rxe8 2.Qxe8#. The rook clears the e-file for the queen with check.
+END
+
+PUZZLE m2-05
+TITLE Back rank again
+CATEGORY Mate in two
+LEVEL 2
+FEN 6k1/5ppp/8/3q4/8/8/2Q2PPP/2R3K1 w - - 0 1
+MOVES Qc8+ Qd8 Qxd8#
+HINT Check on c8!
+EXPLAIN 1.Qc8+ Qd8 (the only way to stop the check) 2.Qxd8#.
+END
+
+# ---------------------------------------------------------------- Win the queen
+PUZZLE q-01
+TITLE Skewer the king
+CATEGORY Win the queen
+LEVEL 2
+FEN 8/8/8/4k2q/8/8/8/R3K3 w - - 0 1
+MOVES Ra5+ Kd4 Rxh5
+HINT Check the king along the fifth rank.
+EXPLAIN 1.Ra5+ forces the king off the fifth rank, and 2.Rxh5 wins the queen. This is a skewer.
+END
+
+PUZZLE q-02
+TITLE Discovered check
+CATEGORY Win the queen
+LEVEL 3
+FEN 4k3/8/8/8/1q6/4N3/4R3/6K1 w - - 0 1
+MOVES Nd5+ Kd7 Nxb4
+HINT Move the knight so that it attacks the queen - and the rook gives check.
+EXPLAIN 1.Nd5+ is a discovered check from the rook, and the knight attacks the queen. After the king moves, 2.Nxb4.
+END
+
+PUZZLE q-03
+TITLE Royal fork
+CATEGORY Win the queen
+LEVEL 2
+FEN 8/8/2k1q3/8/8/5N2/8/7K w - - 0 1
+MOVES Nd4+ Kd5 Nxe6
+HINT Find a square where the knight attacks both the king and the queen.
+EXPLAIN 1.Nd4+ forks king and queen. Whatever Black does, 2.Nxe6 wins the queen.
+END
+
+PUZZLE q-04
+TITLE Pin the queen
+CATEGORY Win the queen
+LEVEL 2
+FEN 3k4/3q4/8/8/8/8/7P/R3K3 w - - 0 1
+MOVES Rd1 Qxd1+ Kxd1
+HINT The queen and king stand on the same file.
+EXPLAIN 1.Rd1 pins the queen to the king. Black can only give up the queen for the rook: 1...Qxd1+ 2.Kxd1, and White wins the pawn endgame.
+END
+
+# ---------------------------------------------------------------- Win material
+PUZZLE w-01
+TITLE Remove the guard
+CATEGORY Win material
+LEVEL 2
+FEN 8/3nk3/8/1B2b3/8/8/8/4R2K w - - 0 1
+MOVES Bxd7 Kxd7 Rxe5
+HINT What protects the bishop on e5?
+EXPLAIN 1.Bxd7 removes the defender of the bishop; after 1...Kxd7 2.Rxe5 White is a piece up.
+END
+
+PUZZLE w-02
+TITLE Too many jobs
+CATEGORY Win material
+LEVEL 3
+FEN 3r2k1/4qppp/8/8/8/3Q4/5PPP/3R2K1 w - - 0 1
+MOVES Qxd8+
+HINT If the black queen recaptures, what happens on the back rank?
+EXPLAIN 1.Qxd8+ wins a rook: if 1...Qxd8 2.Rxd8 is checkmate, so Black must play 1...Qf8 and stay a rook down. The black queen was overloaded.
+END
+
+PUZZLE w-03
+TITLE Interference
+CATEGORY Win material
+LEVEL 3
+FEN 5r2/2P4k/8/8/8/8/6PK/3R4 w - - 0 1
+MOVES Rd8
+HINT Block the rook's control of c8.
+EXPLAIN 1.Rd8! cuts the f8-rook off from c8. If 1...Rxd8 2.cxd8=Q, otherwise 2.c8=Q.
+END
+
+PUZZLE w-04
+TITLE Uncover the rook
+CATEGORY Win material
+LEVEL 2
+FEN 3q2k1/8/8/8/8/3B4/8/3RK3 w - - 0 1
+MOVES Bc4+ Kf8 Rxd8+
+HINT Move the bishop with check.
+EXPLAIN 1.Bc4+ is check, and the d-file opens: after the king moves, 2.Rxd8 wins the queen.
+END
+
+# ---------------------------------------------------------------- Fork
+PUZZLE f-01
+TITLE Knight fork
+CATEGORY Fork
+LEVEL 1
+FEN r3k3/8/8/1N6/8/8/8/4K3 w - - 0 1
+MOVES Nc7+ Kd7 Nxa8
+HINT Attack the king and the rook at the same time.
+EXPLAIN 1.Nc7+ forks king and rook; after the king moves, 2.Nxa8.
+END
+
+PUZZLE f-02
+TITLE Pawn fork
+CATEGORY Fork
+LEVEL 1
+FEN 4k3/8/8/2n1r3/8/3P4/8/6K1 w - - 0 1
+MOVES d4
+HINT Even a pawn can attack two pieces at once.
+EXPLAIN 1.d4 attacks both the knight and the rook. Black can only save one of them.
+END
+
+PUZZLE f-03
+TITLE Queen fork
+CATEGORY Fork
+LEVEL 2
+FEN r7/7k/8/8/8/8/1K6/4Q3 w - - 0 1
+MOVES Qe4+ Kg8 Qxa8+
+HINT Check the king and attack the rook in one move.
+EXPLAIN 1.Qe4+ checks the king on the diagonal and attacks the rook on a8 on the other diagonal. 2.Qxa8+ follows.
+END
+
+PUZZLE f-04
+TITLE Fork in the corner
+CATEGORY Fork
+LEVEL 2
+FEN 8/8/2k1q3/8/8/5N2/8/7K w - - 0 1
+MOVES Nd4+ Kd6 Nxe6
+HINT The knight needs one jump to attack two pieces.
+EXPLAIN 1.Nd4+ attacks the king and the queen. 2.Nxe6 wins the queen.
+END
+
+# ---------------------------------------------------------------- Pin
+PUZZLE p-01
+TITLE Pin and win
+CATEGORY Pin
+LEVEL 2
+FEN 4k3/8/2n5/8/3P4/8/8/4KB2 w - - 0 1
+MOVES Bb5
+HINT Pin the knight to the king, then attack it with a pawn.
+EXPLAIN 1.Bb5 pins the knight; it cannot move, and next d4-d5 attacks it again. Black loses the knight.
+END
+
+PUZZLE p-02
+TITLE The pinned queen
+CATEGORY Pin
+LEVEL 2
+FEN 3k4/3q4/8/8/8/8/7P/R3K3 w - - 0 1
+MOVES Rd1
+HINT Line up your rook with the queen and the king.
+EXPLAIN 1.Rd1 pins the queen to her king. She can only take the rook, and the white king takes back.
+END
+
+# ---------------------------------------------------------------- Skewer
+PUZZLE s-01
+TITLE Bishop skewer
+CATEGORY Skewer
+LEVEL 2
+FEN 8/1r6/8/3k4/8/8/P3B3/6K1 w - - 0 1
+MOVES Bf3+ Kd6 Bxb7
+HINT Check the king on the long diagonal.
+EXPLAIN 1.Bf3+ checks the king, and behind it stands the rook on b7. After the king moves, 2.Bxb7.
+END
+
+PUZZLE s-02
+TITLE Rook skewer
+CATEGORY Skewer
+LEVEL 1
+FEN 4q3/8/8/8/4k3/8/8/K6R w - - 0 1
+MOVES Re1+ Kd5 Rxe8
+HINT Check on the e-file.
+EXPLAIN 1.Re1+ drives the king off the e-file, and 2.Rxe8 wins the queen behind it.
+END
+
+PUZZLE s-03
+TITLE Skewer on the rank
+CATEGORY Skewer
+LEVEL 2
+FEN 8/8/8/4k2q/8/8/8/R3K3 w - - 0 1
+MOVES Ra5+ Kf4 Rxh5
+HINT King and queen are on the same rank.
+EXPLAIN 1.Ra5+ and 2.Rxh5: the king had to step aside and uncovered the queen.
+END
+
+# ---------------------------------------------------------------- Defend
+PUZZLE d-01
+TITLE Stop the Scholar's mate
+CATEGORY Defend against mate
+LEVEL 1
+FEN r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 3 3
+MOVES g6
+ACCEPT Qe7 Qf6
+HINT White threatens Qxf7#. Defend f7 or block the queen.
+EXPLAIN 3...g6 attacks the queen and blocks her path to f7. Qe7 and Qf6 also defend f7. Never forget to check what your opponent threatens!
+END
+
+PUZZLE d-02
+TITLE Make luft
+CATEGORY Defend against mate
+LEVEL 2
+FEN 3r2k1/5ppp/8/8/8/8/5PPP/6K1 w - - 0 1
+MOVES h3
+ACCEPT g3 h4 g4 f3 f4 Kf1
+HINT Black threatens Rd1#. Give your king an escape square.
+EXPLAIN Black threatens 1...Rd1 mate. A pawn move like h3 gives the king a "window" (luft) to escape. Kf1 also works.
+END
+
+# ---------------------------------------------------------------- Save the piece
+PUZZLE a-01
+TITLE The bishop is attacked
+CATEGORY Save the attacked piece
+LEVEL 1
+FEN rnbqkbnr/ppp1ppp1/7p/3p2B1/3P4/8/PPP1PPPP/RN1QKBNR w KQkq - 0 3
+MOVES Bf4
+ACCEPT Bh4 Be3 Bd2 Bc1
+HINT A pawn attacks your bishop. Where can it go?
+EXPLAIN The pawn on h6 attacks the bishop. Retreat it to a safe square such as f4 or h4. Taking on e7 would lose the bishop for a pawn.
+END
+
+PUZZLE a-02
+TITLE Queen in danger
+CATEGORY Save the attacked piece
+LEVEL 1
+FEN r1b1kbnr/pppp1ppp/2n5/4p1q1/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 3 3
+MOVES Qf6
+ACCEPT Qg6 Qe7 Qd8
+HINT The knight on f3 attacks your queen.
+EXPLAIN The white knight attacks the queen. Move her to a safe square: f6, g6, e7 and d8 are all fine.
+END
+
+# ---------------------------------------------------------------- Endgame
+PUZZLE e-01
+TITLE The race
+CATEGORY Endgame
+LEVEL 1
+FEN 8/8/8/8/k6P/8/8/7K w - - 0 1
+MOVES h5
+HINT Use the rule of the square.
+EXPLAIN 1.h5! The black king is outside the pawn's square and can never catch it.
+END
+
+PUZZLE e-02
+TITLE Key square
+CATEGORY Endgame
+LEVEL 3
+FEN 4k3/8/8/4K3/4P3/8/8/8 w - - 0 1
+MOVES Ke6
+ACCEPT Kd6 Kf6
+HINT Your king should go in front of the pawn first.
+EXPLAIN 1.Ke6 reaches a key square of the pawn; the pawn will promote. Pushing the pawn first or 1.Kd5 would allow a draw.
+END
+
+PUZZLE e-03
+TITLE Rook mate
+CATEGORY Endgame
+LEVEL 1
+FEN 4k3/8/4K3/8/8/8/8/R7 w - - 0 1
+MOVES Ra8#
+HINT The kings stand face to face.
+EXPLAIN 1.Ra8# - the typical final position of the rook mate.
+END
+
+PUZZLE e-04
+TITLE Passed pawn
+CATEGORY Endgame
+LEVEL 1
+FEN 8/8/8/3P4/8/5k2/8/3K4 w - - 0 1
+MOVES d6
+HINT Can the black king catch the pawn?
+EXPLAIN 1.d6! The king is too far away: d7 and d8=Q follow.
+END
+
+# ---------------------------------------------------------------- Opening
+PUZZLE o-01
+TITLE Develop with a purpose
+CATEGORY Opening
+LEVEL 1
+FEN r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3
+MOVES Bb5
+ACCEPT Bc4 d4 Nc3
+HINT Bring out a piece that puts pressure on Black's centre.
+EXPLAIN Bb5 (the Ruy Lopez), Bc4 (the Italian Game), d4 (the Scotch) and Nc3 are all excellent developing moves.
+END
+
+PUZZLE o-02
+TITLE Defend f7
+CATEGORY Opening
+LEVEL 2
+FEN r1bqkb1r/pppp1ppp/2n2n2/4p1N1/2B1P3/8/PPPP1PPP/RNBQK2R b KQkq - 5 4
+MOVES d5
+HINT White threatens Nxf7. Block the bishop's diagonal!
+EXPLAIN 4...d5! blocks the bishop's attack on f7. This is the main line of the Two Knights Defence.
+END
+
+# ---------------------------------------------------------------- Positional
+PUZZLE po-01
+TITLE The open file
+CATEGORY Positional
+LEVEL 2
+FEN r4rk1/pp3ppp/2n1bn2/8/8/2N1BN2/PP3PPP/R4RK1 w - - 0 14
+MOVES Rfd1
+ACCEPT Rad1 Rac1 Rfc1 Rfe1 Rae1
+HINT Rooks belong on open files.
+EXPLAIN Put a rook on the open d- or c-file. Rooks on open files can later invade the enemy position.
+END
+
+PUZZLE po-02
+TITLE The active king
+CATEGORY Positional
+LEVEL 2
+FEN 8/p4pk1/1p4p1/8/8/1P4P1/P4PK1/8 w - - 0 1
+MOVES Kf3
+ACCEPT Kf1 Kh3
+HINT In the endgame the king becomes a fighter.
+EXPLAIN With the queens and other pieces gone, the king is safe and strong: bring it towards the centre (Kf3, then Ke4).
+END
+
+# ---------------------------------------------------------------- More: Mate in two
+PUZZLE m2-06
+TITLE The Arabian mate
+CATEGORY Mate in two
+LEVEL 2
+FEN 7k/7p/5N2/8/8/8/8/R5K1 w - - 0 1
+MOVES Ra7 h6 Rh7#
+HINT First bring the rook to the seventh rank. The knight guards g8 and h7.
+EXPLAIN 1.Ra7! is a quiet move: Black can only move the h-pawn. Then 2.Rh7# - the knight protects the rook and also guards g8.
+END
+
+PUZZLE m2-07
+TITLE Anastasia's mate
+CATEGORY Mate in two
+LEVEL 3
+FEN r6k/pp2N1pp/8/8/8/R7/5PPP/1Q4K1 w - - 0 1
+MOVES Qxh7+ Kxh7 Rh3#
+HINT Open the h-file - even if it costs your queen!
+EXPLAIN 1.Qxh7+! Kxh7 2.Rh3#. The knight on e7 takes away g8 and g6, and the black pawn on g7 blocks the king. This pattern is called "Anastasia's mate".
+END
+
+PUZZLE m2-08
+TITLE The Opera game
+CATEGORY Mate in two
+LEVEL 3
+FEN 4kb1r/p2n1ppp/4q3/4p1B1/4P3/1Q6/PPP2PPP/2KR4 w k - 1 17
+MOVES Qb8+ Nxb8 Rd8#
+HINT The rook and the bishop on g5 want the d8-square. Who is guarding it?
+EXPLAIN 1.Qb8+!! Nxb8 2.Rd8#. The queen sacrifice pulls the knight away from d7. This is the famous finish of Paul Morphy's "Opera game" (Paris, 1858).
+END
+
+PUZZLE m2-09
+TITLE Legal's mate
+CATEGORY Mate in two
+LEVEL 2
+FEN rn1qkbnr/ppp2p1p/3p2p1/4N3/2B1P3/2N5/PPPP1PPP/R1BbK2R w KQkq - 0 6
+MOVES Bxf7+ Ke7 Nd5#
+HINT Black just took your queen. Forget about it - the black king is in danger!
+EXPLAIN 1.Bxf7+ Ke7 2.Nd5#. Three small pieces mate the king. This old trap is called "Legal's mate", after the French player Legall de Kermeur.
+END
+
+# ---------------------------------------------------------------- More: Pin
+PUZZLE p-03
+TITLE The pinned knight
+CATEGORY Pin
+LEVEL 1
+FEN 4k3/8/3p4/4n3/8/8/5P2/4R1K1 w - - 0 1
+MOVES f4
+HINT The knight cannot move away - your rook pins it to the king.
+EXPLAIN 1.f4! attacks the pinned knight with a pawn. The knight cannot run away, so Black loses it.
+END
+
+PUZZLE p-04
+TITLE The diagonal pin
+CATEGORY Pin
+LEVEL 2
+FEN 6k1/6pp/8/3q4/8/1P6/5PPP/5BK1 w - - 0 1
+MOVES Bc4
+HINT The black queen and king stand on the same diagonal.
+EXPLAIN 1.Bc4! pins the queen to the king. The queen can only take the bishop, and then bxc4 wins the queen for a bishop.
+END
+
+PUZZLE p-05
+TITLE Attack the pinned piece
+CATEGORY Pin
+LEVEL 2
+FEN 4k3/pp3ppp/8/3p4/1b6/2N5/PP3PPP/4K3 b - - 0 1
+MOVES d4
+HINT The white knight is pinned by your bishop. Attack it again!
+EXPLAIN 1...d4! attacks the knight with a pawn. The knight may not move because the white king is behind it, so Black wins a piece.
+END
+
+# ---------------------------------------------------------------- More: Opening
+PUZZLE o-03
+TITLE The greedy knight
+CATEGORY Opening
+LEVEL 2
+FEN r1bqkbnr/pppp1ppp/8/4N3/2BnP3/8/PPPP1PPP/RNBQK2R b KQkq - 0 4
+MOVES Qg5
+HINT White grabbed the e5-pawn. Find a queen move that attacks two things.
+EXPLAIN 4...Qg5! attacks the knight on e5 and the pawn on g2 at the same time. White cannot save both and soon loses material. Grabbing pawns in the opening can be dangerous!
+END
+
+PUZZLE o-04
+TITLE The elephant trap
+CATEGORY Opening
+LEVEL 3
+FEN r1bqkb1r/pppn1ppp/5n2/3N2B1/3P4/8/PP2PPPP/R2QKBNR b KQkq - 0 6
+MOVES Nxd5
+HINT The knight on f6 seems pinned to the queen. Is it really?
+EXPLAIN 6...Nxd5! If White takes the queen with 7.Bxd8, then 7...Bb4+ 8.Qd2 Bxd2+ 9.Kxd2 Kxd8 and Black is a piece up. A pin to the queen is not a real pin!
+END
+
+# ---------------------------------------------------------------- More: Positional
+PUZZLE po-03
+TITLE Push the passed pawn
+CATEGORY Positional
+LEVEL 2
+FEN 1r4k1/5ppp/8/P7/8/8/5PPP/3R2K1 w - - 0 1
+MOVES a6
+ACCEPT Ra1
+HINT No black pawn can stop your a-pawn. Let it run!
+EXPLAIN 1.a6! A passed pawn gets stronger with every step. Black's rook must now stay on the a-file to stop it, so it becomes passive. Ra1, putting the rook behind the pawn, is also good.
+END
+
+PUZZLE po-04
+TITLE The king stops the pawn
+CATEGORY Positional
+LEVEL 2
+FEN 6k1/5ppp/8/8/3p4/8/1N3PPP/6K1 w - - 0 1
+MOVES Kf1
+HINT In the endgame the king is a strong piece. Send it towards the passed pawn.
+EXPLAIN 1.Kf1! The king walks to e2 and d3, where it blocks the pawn and soon wins it. In the endgame, use your king!
+END
+
+PUZZLE po-05
+TITLE Rook on the seventh
+CATEGORY Positional
+LEVEL 3
+FEN 4r1k1/p4ppp/1p6/8/8/1P5P/P4PP1/3R2K1 w - - 0 1
+MOVES Rd7
+HINT Which rank is full of black pawns?
+EXPLAIN 1.Rd7! A rook on the seventh rank attacks the pawns from the side, where they are hard to defend. Thanks to the pawn on h3 your king has an escape square, so the back rank is safe.
+END
+
+# ---------------------------------------------------------------- More: Defend against mate
+PUZZLE d-03
+TITLE Guard h2
+CATEGORY Defend against mate
+LEVEL 1
+FEN r1b2rk1/ppp2ppp/8/8/6nq/8/PPPN1PPP/R1BQ1RK1 w - - 0 1
+MOVES Nf3
+ACCEPT h3
+HINT Black threatens Qxh2#. Bring a piece that guards h2.
+EXPLAIN 1.Nf3! guards h2 and attacks the black queen. The knight on f3 is the best defender of a castled king.
+END
+
+PUZZLE d-04
+TITLE Save h7
+CATEGORY Defend against mate
+LEVEL 2
+FEN r1bq1rk1/pppn1ppp/8/7Q/8/3B4/PPP2PPP/R4RK1 b - - 0 1
+MOVES Nf6
+ACCEPT g6 h6 f5
+HINT The queen and the bishop both aim at h7. White threatens Qxh7#.
+EXPLAIN 1...Nf6! guards h7 and attacks the queen at the same time. Moves like g6, h6 or f5 also stop the mate, but bringing a knight to f6 is the classic defence.
+END
+
+PUZZLE d-05
+TITLE Remove the helper
+CATEGORY Defend against mate
+LEVEL 2
+FEN 2r3k1/pp3p1p/3q1BpQ/8/8/7P/PPP2PP1/6K1 b - - 0 1
+MOVES Qxf6
+HINT White threatens Qg7#. Which white piece helps the queen?
+EXPLAIN 1...Qxf6! The bishop on f6 protected the g7-square. Remove it and the mate threat is gone - and you have won a piece too.
+END
+
+# ---------------------------------------------------------------- More: Save the attacked piece
+PUZZLE a-03
+TITLE The knight is chased
+CATEGORY Save the attacked piece
+LEVEL 1
+FEN rnbqkb1r/pppppppp/5n2/4P3/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 2
+MOVES Nd5
+ACCEPT Ng8
+HINT The pawn on e5 attacks your knight. Find a safe central square.
+EXPLAIN 2...Nd5 puts the knight on a safe square in the centre. This opening is called the Alekhine Defence. Ne4 would be risky, because d3 would chase the knight again.
+END
+
+PUZZLE a-04
+TITLE Take the attacker
+CATEGORY Save the attacked piece
+LEVEL 1
+FEN r5k1/ppp2ppp/8/8/8/4n3/PP4PP/2BQ1RK1 w - - 0 1
+MOVES Bxe3
+HINT The knight attacks your queen and your rook. Can you capture it?
+EXPLAIN 1.Bxe3! The best way to save your pieces is to capture the attacker. Now you are a whole piece up.
+END
+
+PUZZLE a-05
+TITLE Bishop under attack
+CATEGORY Save the attacked piece
+LEVEL 2
+FEN rnbqk2r/pppp1ppp/4pn2/8/1bPP4/P1N5/1P2PPPP/R1BQKBNR b KQkq - 0 4
+MOVES Bxc3+
+ACCEPT Be7
+HINT The pawn on a3 attacks your bishop. You can take something before it is lost.
+EXPLAIN 4...Bxc3+ trades the bishop for the knight and gives White doubled pawns. Retreating with Be7 is also fine. Don't play Ba5 - after b4 the bishop is chased again.
+END
+
+# ---------------------------------------------------------------- Find the best move
+PUZZLE bm-01
+TITLE Mate comes first
+CATEGORY Find the best move
+LEVEL 1
+FEN 6k1/5ppp/8/8/3N4/1q6/5PPP/4R1K1 w - - 0 1
+MOVES Re8#
+HINT You can win the queen - but is there something even better?
+EXPLAIN 1.Re8# ends the game at once. Always look for checks first: checkmate is worth more than any queen!
+END
+
+PUZZLE bm-02
+TITLE The right promotion
+CATEGORY Find the best move
+LEVEL 1
+FEN r3k3/1P6/8/8/8/8/8/4K3 w - - 0 1
+MOVES bxa8=Q+
+HINT The square in front of your pawn is guarded. But a pawn can also capture!
+EXPLAIN 1.bxa8=Q+ wins the rook and makes a new queen with check. After 1.b8=Q? Black would simply play Rxb8.
+END
+
+PUZZLE bm-03
+TITLE Discovered attack
+CATEGORY Find the best move
+LEVEL 2
+FEN 6k1/4qppp/8/8/4B3/8/5PPP/4R1K1 w - - 0 1
+MOVES Bxh7+
+HINT Your bishop stands between your rook and the black queen.
+EXPLAIN 1.Bxh7+! is a discovered attack: the bishop gives check, and the rook on e1 now attacks the queen. After the king moves, Rxe7 wins the queen.
+END
+
+PUZZLE bm-04
+TITLE Trap the bishop
+CATEGORY Find the best move
+LEVEL 2
+FEN 6k1/5ppp/8/8/8/8/bPP2PPP/2K5 w - - 0 1
+MOVES b3
+HINT The black bishop on a2 has very few squares. Close the last door.
+EXPLAIN 1.b3! traps the bishop: it cannot get out, and your king will capture it with Kb2. Taking a pawn on a2 is a famous mistake!
+END
+
+PUZZLE bm-05
+TITLE Remove the defender
+CATEGORY Find the best move
+LEVEL 2
+FEN r2q1rk1/ppp2ppp/5n2/6B1/8/3B3Q/PPP2PPP/R4RK1 w - - 0 1
+MOVES Bxf6
+HINT Your queen and bishop aim at h7. Which black piece defends it?
+EXPLAIN 1.Bxf6! removes the knight that guards h7. If Black takes back with Qxf6 or gxf6, then Qxh7 is mate. So Black has to give up material and you win a piece.
+END
+
+PUZZLE bm-06
+TITLE Quiet castling
+CATEGORY Find the best move
+LEVEL 2
+FEN r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQ - 0 7
+MOVES O-O
+HINT Black's king is already safe. What about yours?
+EXPLAIN 7.O-O puts your king in safety and brings the rook towards the centre. When nothing is happening, finish your development and castle.
+END
+
+PUZZLE bm-07
+TITLE The skewer trick
+CATEGORY Find the best move
+LEVEL 3
+FEN R7/P3k3/8/8/8/8/r7/6K1 w - - 0 1
+MOVES Rh8
+ACCEPT Rg8
+HINT Move your rook out of the way, but keep an eye on the seventh rank.
+EXPLAIN 1.Rh8! threatens to make a queen. If 1...Rxa7, then 2.Rh7+ is a skewer: the king must move and White takes the rook. 1.Rg8 works the same way.
+END
+
+PUZZLE bm-08
+TITLE Lure the queen
+CATEGORY Find the best move
+LEVEL 3
+FEN 3q2k1/pp3p1p/1b4p1/1B1N4/8/8/PP3PPP/4R1K1 w - - 0 1
+MOVES Re8+
+HINT Give a check on the back rank. Who has to capture, and what happens next?
+EXPLAIN 1.Re8+! The black queen must take the rook: 1...Qxe8. Now 2.Bxe8 (or the knight fork 2.Nf6+) wins the queen back, and you are a whole piece ahead.
+END

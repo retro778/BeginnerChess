@@ -1,0 +1,292 @@
+# Beginner Chess lessons - Chapter 3: Tactics
+# Every task position was checked with the Beginner Chess engine.
+
+LESSON fork
+TITLE The fork
+CHAPTER Tactics
+SUMMARY Attack two pieces at once.
+PAGE
+FEN r3k3/2N5/8/8/8/8/8/4K3 b - - 0 1
+ARROW red c7e8
+ARROW red c7a8
+TEXT A FORK is a move that attacks two (or more) enemy pieces at the same time. Your opponent can save only one of them!
+TEXT |Knights are the champions of forks. Here the white knight attacks the king AND the rook.
+TASK
+FEN r3k3/8/8/1N6/8/8/8/4K3 w - - 0 1
+TEXT Find a knight fork that wins the black rook!
+GOAL move Nc7
+HINT Look for a square where the knight attacks both the king and the rook.
+SUCCESS Fork! The king must move, and then your knight takes the rook.
+END
+
+LESSON pin
+TITLE The pin
+CHAPTER Tactics
+SUMMARY A piece that cannot move.
+PAGE
+FEN 4k3/8/2n5/1B6/8/8/8/4K3 b - - 0 1
+ARROW red b5e8
+HIGHLIGHT yellow c6
+TEXT A PIN attacks a piece that has a more valuable piece behind it. Here the black knight is pinned: if it moved, the king would be in check - so it is not allowed to move at all!
+TEXT |Bishops, rooks and queens can pin, because they attack along lines.
+TASK
+FEN 3k4/3q4/8/8/8/8/7P/R3K3 w - - 0 1
+TEXT Pin the black queen to her king!
+GOAL move Rd1
+HINT Put your rook on the same file as the queen and the king.
+SUCCESS The queen is pinned. She can only take your rook - and then your king takes her. A queen for a rook!
+END
+
+LESSON skewer
+TITLE The skewer
+CHAPTER Tactics
+SUMMARY Attack through a piece.
+PAGE
+FEN 8/8/8/R3k2q/8/8/8/4K3 b - - 0 1
+ARROW red a5e5
+ARROW red e5h5
+TEXT A SKEWER is like a pin the other way round: you attack a valuable piece, it has to move away, and the piece behind it is lost.
+TEXT |Here the rook gives check to the king. When the king moves away, the rook captures the queen.
+TASK
+FEN 8/8/8/4k2q/8/8/8/R3K3 w - - 0 1
+TEXT Find the skewer that wins the black queen!
+GOAL move Ra5
+REPLY Kd4
+GOAL move Rxh5
+HINT Give check along the fifth rank.
+SUCCESS Skewered! The king had to step aside and the queen was lost.
+END
+
+LESSON discovered-attack
+TITLE The discovered attack
+CHAPTER Tactics
+SUMMARY Uncover a hidden attacker.
+PAGE
+FEN 3q2k1/8/8/8/8/3B4/8/3RK3 w - - 0 1
+ARROW yellow d1d8
+HIGHLIGHT yellow d3
+TEXT In a DISCOVERED ATTACK one piece moves out of the way and uncovers an attack by the piece behind it.
+TEXT |Here the bishop on d3 blocks the rook. When the bishop moves, the rook suddenly attacks the black queen - and if the bishop gives check at the same time, Black has no time to save the queen!
+TASK
+FEN 3q2k1/8/8/8/8/3B4/8/3RK3 w - - 0 1
+TEXT Move the bishop with CHECK, so that your rook can win the queen.
+GOAL move Bc4
+REPLY Kf8
+GOAL move Rxd8
+HINT Which bishop move gives check to the king on g8?
+SUCCESS Well done! The check and the uncovered rook attack came together.
+END
+
+LESSON discovered-check
+TITLE The discovered check
+CHAPTER Tactics
+SUMMARY The piece behind gives check.
+PAGE
+FEN 4k3/8/8/8/1q6/4N3/4R3/6K1 w - - 0 1
+ARROW yellow e2e8
+TEXT A DISCOVERED CHECK is a discovered attack against the king. The moving piece can go almost anywhere - even attack something - because the opponent must deal with the check first.
+TASK
+FEN 4k3/8/8/8/1q6/4N3/4R3/6K1 w - - 0 1
+TEXT Move the knight so that the rook gives check AND the knight attacks the queen.
+GOAL move Nd5
+REPLY Kd7
+GOAL move Nxb4
+HINT Which knight move attacks b4?
+SUCCESS Perfect discovered check - the queen was lost.
+END
+
+LESSON double-attack
+TITLE The double attack
+CHAPTER Tactics
+SUMMARY One move, two threats.
+PAGE
+FEN 8/k7/8/8/2r1Q1n1/8/8/4K3 b - - 0 1
+ARROW red e4c4
+ARROW red e4g4
+TEXT A DOUBLE ATTACK is any move that creates two threats at once. A fork is one kind of double attack; queens are especially good at them because they move in every direction.
+TASK
+FEN 8/k7/8/8/2r3n1/8/8/4K2Q w - - 0 1
+TEXT The black rook and knight are both unprotected. Attack them with your queen!
+GOAL move Qe4 Qd5
+HINT Find a square in the middle of the board for your queen.
+SUCCESS Double attack! Black cannot save both pieces.
+END
+
+LESSON double-check
+TITLE The double check
+CHAPTER Tactics
+SUMMARY Two pieces give check at once.
+PAGE
+FEN 4k3/8/8/1B6/8/8/8/4R1K1 b - - 0 1
+ARROW red b5e8
+ARROW red e1e8
+TEXT In a DOUBLE CHECK two pieces give check at the same time. Blocking or capturing cannot stop two checks, so the king MUST move. Double checks are often deadly!
+TASK
+FEN 4k3/8/8/8/8/8/4B3/4R1K1 w - - 0 1
+TEXT Move your bishop so that the bishop AND the rook give check.
+GOAL move Bb5 Bh5
+HINT The bishop must open the e-file and attack the king itself.
+SUCCESS Double check! The king has to run.
+END
+
+LESSON deflection
+TITLE Deflection
+CHAPTER Tactics
+SUMMARY Lure a defender away.
+PAGE
+FEN r3r1k1/5ppp/8/8/8/8/4QPPP/4R1K1 w - - 0 1
+ARROW yellow a8e8
+HIGHLIGHT yellow e8
+TEXT DEFLECTION forces a defending piece away from its job. Here the black rook on a8 protects the rook on e8 and the whole back rank.
+TASK
+FEN r3r1k1/5ppp/8/8/8/8/4QPPP/4R1K1 w - - 0 1
+TEXT Sacrifice your queen to deflect the a8-rook - then give checkmate!
+GOAL move Qxe8
+REPLY Rxe8
+GOAL move Rxe8
+HINT Capture on e8 with the queen first.
+SUCCESS Checkmate! The a8-rook was deflected from defending the back rank.
+END
+
+LESSON decoy
+TITLE The decoy
+CHAPTER Tactics
+SUMMARY Lure a piece onto a bad square.
+PAGE
+FEN r6k/6pp/7N/8/2Q5/8/8/6K1 w - - 0 1
+HIGHLIGHT yellow g8
+TEXT A DECOY lures an enemy piece onto a square where it gets in the way. Here White can sacrifice the queen on g8: the black rook must take it - and then it blocks its own king's last escape square.
+TASK
+FEN r6k/6pp/7N/8/2Q5/8/8/6K1 w - - 0 1
+TEXT Lure the rook to g8, then give a smothered mate with the knight!
+GOAL move Qg8
+REPLY Rxg8
+GOAL move Nf7
+HINT The queen check on g8 can only be answered by capturing with the rook.
+SUCCESS Smothered mate! The king was surrounded by its own pieces. This famous pattern is called Philidor's Legacy.
+END
+
+LESSON removing-defender
+TITLE Removing the defender
+CHAPTER Tactics
+SUMMARY Capture the piece that protects.
+PAGE
+FEN 8/3nk3/8/1B2b3/8/8/8/4R2K w - - 0 1
+ARROW yellow d7e5
+ARROW red e1e5
+TEXT If a piece is protected only once, capture its DEFENDER first. Here the knight on d7 protects the bishop on e5.
+TASK
+FEN 8/3nk3/8/1B2b3/8/8/8/4R2K w - - 0 1
+TEXT Remove the defender, then win the bishop!
+GOAL move Bxd7
+REPLY Kxd7
+GOAL move Rxe5
+HINT Which piece is guarding the bishop on e5?
+SUCCESS You traded bishop for knight and then won the bishop for free!
+END
+
+LESSON overload
+TITLE Overload
+CHAPTER Tactics
+SUMMARY A defender with too many jobs.
+PAGE
+FEN 3r2k1/4qppp/8/8/8/3Q4/5PPP/3R2K1 w - - 0 1
+HIGHLIGHT yellow e7
+TEXT A piece is OVERLOADED when it has to do two jobs at once. Here the black queen protects the rook on d8 - but she also has to watch the back rank.
+TASK
+FEN 3r2k1/4qppp/8/8/8/3Q4/5PPP/3R2K1 w - - 0 1
+TEXT Take advantage of the overloaded queen!
+GOAL move Qxd8
+HINT If the black queen takes back on d8, what does your rook on d1 do?
+SUCCESS Well spotted! If Black takes your queen, Rxd8 is checkmate - so Black just loses a rook.
+END
+
+LESSON interference
+TITLE Interference
+CHAPTER Tactics
+SUMMARY Block the line of a defender.
+PAGE
+FEN 5r2/2P4k/8/8/8/8/6PK/3R4 w - - 0 1
+ARROW red f8c8
+HIGHLIGHT yellow c8
+TEXT INTERFERENCE means putting a piece between an enemy defender and the square it guards. Here the black rook on f8 stops the c-pawn from promoting.
+TASK
+FEN 5r2/2P4k/8/8/8/8/6PK/3R4 w - - 0 1
+TEXT Cut the rook off from c8, so your pawn can become a queen!
+GOAL move Rd8
+HINT Put your rook in the way, on the eighth rank.
+SUCCESS Interference! If the rook takes on d8, the pawn takes back and promotes.
+END
+
+LESSON clearance
+TITLE Clearance
+CHAPTER Tactics
+SUMMARY Get out of the way - with tempo.
+PAGE
+FEN 3r2k1/5ppp/8/4R3/8/8/5PPP/4Q1K1 w - - 0 1
+ARROW yellow e1e8
+HIGHLIGHT yellow e5
+TEXT A CLEARANCE move gets a piece out of the way so that another piece can use the line or square - often with a check or a sacrifice. Here your own rook blocks the queen's way to e8.
+TASK
+FEN 3r2k1/5ppp/8/4R3/8/8/5PPP/4Q1K1 w - - 0 1
+TEXT Clear the e-file with a check, then checkmate with the queen!
+GOAL move Re8
+REPLY Rxe8
+GOAL move Qxe8
+HINT The rook can give check on e8.
+SUCCESS Checkmate! The rook cleared the way for the queen.
+END
+
+LESSON zwischenzug
+TITLE The in-between move
+CHAPTER Tactics
+SUMMARY First a check, then take back.
+PAGE
+FEN start
+PLAY e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4
+ARROW red d4e5
+ARROW red d4e4
+TEXT Sometimes the obvious reply is not the best one. An IN-BETWEEN MOVE (in German: "Zwischenzug") is a stronger move played first - usually a check or a big threat - before doing the "normal" move.
+TEXT |In this opening White has just taken the pawn on e5. Black does not hurry to take anything back: ...Qd4! attacks the knight and the e4-pawn at once, and wins the pawn back.
+TEXT |Before every capture or recapture, ask yourself: "Is there an even stronger move first?"
+END
+
+LESSON sacrifice
+TITLE The sacrifice
+CHAPTER Tactics
+SUMMARY Give material to win more.
+PAGE
+FEN r1bq1rk1/pppn1ppp/4p3/3pP3/1b1P4/2NB1N2/PPP2PPP/R1BQK2R w KQ - 0 8
+ARROW red d3h7
+TEXT A SACRIFICE gives away material on purpose, to get something bigger: a mating attack, more material later, or a winning position.
+TEXT |A famous sacrifice is the "Greek gift": Bxh7+ ripping open the castled king. It works best when the knight can jump to g5 and the queen can reach h5, and no black knight defends h7.
+TASK
+FEN r1bq1rk1/pppn1ppp/4p3/3pP3/1b1P4/2NB1N2/PPP2PPP/R1BQK2R w KQ - 0 8
+TEXT Play the Greek gift sacrifice!
+GOAL move Bxh7
+REPLY Kxh7
+GOAL move Ng5
+REPLY Kg8
+GOAL move Qh5
+HINT Start by taking on h7 with check.
+SUCCESS The black king is in great danger: White threatens Qh7 checkmate. That is the power of a well-prepared sacrifice!
+END
+
+LESSON mating-combination
+TITLE Mating combinations
+CHAPTER Tactics
+SUMMARY Force your way to checkmate.
+PAGE
+FEN 2r3k1/5ppp/8/8/8/8/4RPPP/4R1K1 w - - 0 1
+ARROW yellow e2e8
+TEXT A COMBINATION is a series of forcing moves - checks, captures and threats - that leads to a goal. The best goal of all is checkmate!
+TEXT |Here White's rooks are DOUBLED on the e-file, and Black's king has no escape square on the back rank.
+TASK
+FEN 2r3k1/5ppp/8/8/8/8/4RPPP/4R1K1 w - - 0 1
+TEXT Find the checkmate in two moves!
+GOAL move Re8
+REPLY Rxe8
+GOAL move Rxe8
+HINT Give check on e8 first.
+SUCCESS Checkmate! Black's rook could take one of yours, but not both.
+END

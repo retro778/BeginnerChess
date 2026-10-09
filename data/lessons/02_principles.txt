@@ -1,0 +1,120 @@
+# Beginner Chess lessons - Chapter 2: Basic principles
+
+LESSON centre
+TITLE Control the centre
+CHAPTER Basic principles
+SUMMARY The four most important squares.
+PAGE
+FEN start
+HIGHLIGHT yellow d4 e4 d5 e5
+TEXT The four squares in the middle - d4, e4, d5 and e5 - are the CENTRE of the board.
+TEXT |Pieces in the centre can reach both sides of the board quickly, and a knight in the centre controls up to 8 squares (in a corner only 2!). So: try to control the centre with your pawns and pieces.
+TASK
+FEN start
+TEXT Start the game with a pawn move that takes space in the centre.
+GOAL move e4 d4
+HINT Use one of the two pawns right in front of your king and queen.
+SUCCESS Excellent - a classic central opening move!
+FEEDBACK a4 This pawn move does nothing for the centre. Try a central pawn!
+FEEDBACK h4 This pawn move does nothing for the centre. Try a central pawn!
+WRONG That move is legal, but it does not fight for the centre. Try e4 or d4.
+END
+
+LESSON develop
+TITLE Develop your pieces
+CHAPTER Basic principles
+SUMMARY Bring knights and bishops into play.
+PAGE
+FEN r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3
+ARROW g1f3 f1c4
+TEXT DEVELOPING means bringing your pieces from the back rank to active squares. Knights and bishops come first - usually knights before bishops.
+TEXT |In this position White has developed a knight and a bishop and is almost ready to castle.
+TASK
+FEN rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+TEXT Both sides have a pawn in the centre. Now develop a knight or a bishop!
+GOAL move Nf3 Nc3 Bc4 Bb5
+HINT A knight on f3 or c3, or the bishop on c4 or b5, are all good.
+SUCCESS Good development! Every developed piece is ready to take part in the fight.
+WRONG Try to bring out a knight or a bishop towards the centre.
+END
+
+LESSON castle-early
+TITLE Castle your king
+CHAPTER Basic principles
+SUMMARY Get the king to safety early.
+PAGE
+FEN r1bq1rk1/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 2 6
+HIGHLIGHT green g1 g8
+TEXT In the middle of the game the centre gets busy and open. A king left there is in danger.
+TEXT |CASTLE early: it puts your king behind a wall of pawns, and brings a rook towards the centre.
+TASK
+FEN r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4
+TEXT Your knight and bishop are out. Time to bring your king to safety!
+GOAL castle
+HINT Castle on the king's side: king to g1.
+SUCCESS Your king is safe, and your rook is ready to join the game.
+END
+
+LESSON one-move
+TITLE Don't move a piece twice without a reason
+CHAPTER Basic principles
+SUMMARY Every move should help.
+PAGE
+FEN rnbqkb1r/pppp1ppp/8/4p3/4P1n1/5N2/PPPP1PPP/RNBQKB1R w KQkq - 3 3
+ARROW f6g4
+HIGHLIGHT red g4
+TEXT In the opening, every move counts. Moving the same piece again and again wastes time, while your opponent brings out new pieces.
+TEXT |Here Black's knight has already moved twice (g8-f6-g4) and is doing nothing useful. Move each piece once, then the next one - unless you have a good reason (a capture, a threat, or escaping an attack).
+END
+
+LESSON queen-early
+TITLE Don't bring the queen out too early
+CHAPTER Basic principles
+SUMMARY The queen can be chased.
+PAGE
+FEN r1bqkb1r/pppp1p1p/2n2np1/4p3/2B1P3/5Q2/PPPP1PPP/RNB1K1NR w KQkq - 2 5
+HIGHLIGHT red f3
+ARROW red f6g4
+TEXT The queen is your most valuable piece. If she comes out too early, the enemy can attack her with smaller pieces - and develop at the same time!
+TEXT |Here White's queen went to h5 and then f3. Black chased her with ...g6 and ...Nf6 and is now well developed, while White has wasted moves. Develop knights and bishops first; the queen comes later.
+END
+
+LESSON protect
+TITLE Protect your pieces
+CHAPTER Basic principles
+SUMMARY Don't leave pieces hanging.
+PAGE
+FEN rnbqkb1r/ppp2ppp/5n2/3pp3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq d6 0 4
+HIGHLIGHT red c4
+ARROW red d5c4
+TEXT Before every move, ask: "Are any of my pieces attacked? Are they protected?"
+TEXT |A piece that is attacked and not protected is "hanging" - your opponent can just take it. Here the black pawn on d5 attacks the white bishop on c4!
+TASK
+FEN rnbqkb1r/ppp2ppp/5n2/3pp3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq d6 0 4
+TEXT Your bishop on c4 is attacked by the pawn on d5. Find a good move!
+GOAL best 80
+HINT You can capture the attacker, or move the bishop to safety.
+SUCCESS Good! You dealt with the threat.
+WRONG Careful - after that move Black can take your bishop. Deal with the attack first!
+END
+
+LESSON threats
+TITLE Look for your opponent's threats
+CHAPTER Basic principles
+SUMMARY What does the last move want?
+PAGE
+FEN r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 3 3
+HIGHLIGHT red f7
+ARROW red h5f7
+ARROW red c4f7
+TEXT After every move of your opponent, ask: "What does this move want to do?"
+TEXT |Here White's queen and bishop both aim at f7. White threatens Qxf7 - CHECKMATE! (This trick is called the Scholar's Mate.)
+TASK
+FEN r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 3 3
+TEXT You are Black. White threatens Qxf7 checkmate. Stop it!
+GOAL safe
+HINT Protect f7, or block the queen's path to it.
+SUCCESS Well defended! Moves like g6 or Qe7 stop the mate. Always check your opponent's threats!
+FEEDBACK Nf6 Oh no - after Nf6 White plays Qxf7, checkmate! The knight does not protect f7.
+WRONG That move does not stop Qxf7 checkmate. Look at the f7-square!
+END

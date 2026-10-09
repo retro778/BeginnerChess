@@ -1,0 +1,7 @@
+# Exact versions used for development and deployment (pip install -r requirements.txt).
+# Licences: websockets BSD-3-Clause; argon2-cffi MIT; argon2-cffi-bindings MIT; cffi MIT-0; pycparser BSD-3-Clause.
+websockets==17.2
+argon2-cffi==25.1.0
+argon2-cffi-bindings==26.1.0
+cffi==2.1.1
+pycparser==3.1
